@@ -1,5 +1,5 @@
-@prefix this: <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/RAZjHxiw9KO_pJ40GhZkNabGDxuMB1YVXfY97VizneASs> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/RAZjHxiw9KO_pJ40GhZkNabGDxuMB1YVXfY97VizneASs#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/RASwYIvgR3kxV8AeGXdCrpTaCXWpSEH3jFC0eTI8rtoXw> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/RASwYIvgR3kxV8AeGXdCrpTaCXWpSEH3jFC0eTI8rtoXw#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
@@ -39,7 +39,7 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-04T15:07:48.470+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-04T15:11:59.683+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
