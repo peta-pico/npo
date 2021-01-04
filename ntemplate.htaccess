@@ -1,4 +1,5 @@
-RewriteRule ^ntemplate/terms/(.+)$ https://w3id.org/np/o/ntemplate/latest/$1 [R=302,L]
+RewriteRule ^ntemplate/([^/]+)$ https://w3id.org/np/o/ntemplate/latest/$1 [R=302,L]
 RewriteRule ^ntemplate/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
 
-RewriteRule ^ntemplate/latest/FIP-Ontology$ http://purl.org/np/RASwYIvgR3kxV8AeGXdCrpTaCXWpSEH3jFC0eTI8rtoXw [R=302,L]
+RewriteRule ^ntemplate/latest/NanopubTemplateOntology$ http://purl.org/np/RArELI_jERipBUm0ubsV4rYuZfgGcJMzOT5UA6H73vK28 [R=302,L]
+RewriteRule ^ntemplate/latest/AssertionTemplate$ http://purl.org/np/RASaS1txQYdCurByG-oPI4h2V-QJDtcqGFq2uuJMfwMJM [R=302,L]

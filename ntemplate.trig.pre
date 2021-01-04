@@ -4,8 +4,8 @@
 
 # Introduce ontology:
 
-@prefix : <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/> .
-@prefix latest: <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+@prefix : <https://w3id.org/np/o/ntemplate/np/NanopubTemplateOntology/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/NanopubTemplateOntology> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
@@ -27,7 +27,7 @@
 }
 
 :assertion {
-  nt:NP-Template-Ontology a owl:Ontology ;
+  nt:NanopubTemplateOntology a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/np/o/ntemplate/" ;
     vann:preferredNamespacePrefix "nt" ;
     dct:title "Nanopublication Template Ontology" ;
@@ -38,20 +38,21 @@
 }
 
 :provenance {
-  :assertion orcid:0000-0002-1267-0234 .
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T15:11:59.683+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-04T15:31:08.122+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:NanopubTemplateOntology .
 }
 
 
 # Class definitions:
 
-@prefix : <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/> .
-@prefix latest: <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+@prefix : <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/AssertionTemplate> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -79,12 +80,13 @@
 }
 
 :provenance {
-  :assertion orcid:0000-0002-1267-0234 .
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T15:11:59.683+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-04T15:31:08.122+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:AssertionTemplate .
 }
 
