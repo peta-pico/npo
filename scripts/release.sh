@@ -33,5 +33,6 @@ echo "Publishing $1.index.trig..."
 scripts/np publish $1.index.trig
 
 echo "Save new release $1.$NEWRELEASE in releases/"
+mkdir -p releases
 cp $1.trig releases/$1.$NEWRELEASE.trig
 cp $1.index.trig releases/$1.index.$NEWRELEASE.trig
