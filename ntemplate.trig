@@ -1,5 +1,5 @@
-@prefix this: <https://w3id.org/np/o/ntemplate/np/NanopubTemplateOntology/RArELI_jERipBUm0ubsV4rYuZfgGcJMzOT5UA6H73vK28> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/NanopubTemplateOntology/RArELI_jERipBUm0ubsV4rYuZfgGcJMzOT5UA6H73vK28#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/NanopubTemplateOntology/RA6-aP9t3OcdluJQZ20TvndmU-7YbecuPdUDNBJbdLbHA> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/NanopubTemplateOntology/RA6-aP9t3OcdluJQZ20TvndmU-7YbecuPdUDNBJbdLbHA#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/NanopubTemplateOntology> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
@@ -34,13 +34,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-04T15:31:08.122+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-04T15:35:14.066+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:NanopubTemplateOntology .
 }
-@prefix this: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RASaS1txQYdCurByG-oPI4h2V-QJDtcqGFq2uuJMfwMJM> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RASaS1txQYdCurByG-oPI4h2V-QJDtcqGFq2uuJMfwMJM#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAgnTswSJVbteT-6nqKlPqk-cpPjG6z-slHpxh4r5R6uA> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAgnTswSJVbteT-6nqKlPqk-cpPjG6z-slHpxh4r5R6uA#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/AssertionTemplate> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
@@ -71,7 +71,7 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-04T15:31:08.122+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-04T15:35:14.066+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:AssertionTemplate .

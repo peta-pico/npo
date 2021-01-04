@@ -42,7 +42,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T15:31:08.122+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-04T15:35:14.066+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplateOntology .
@@ -84,7 +84,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T15:31:08.122+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-04T15:35:14.066+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:AssertionTemplate .
