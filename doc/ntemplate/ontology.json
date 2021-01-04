@@ -32,9 +32,26 @@
     "@language" : "en",
     "@value" : "Assertion Template"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "This is a template that describes the assertion of a nanopublication."
+    "@value" : "A template that describes the assertion of a nanopublication."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/NanopubTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nanopublication Template"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A template that describes a part of a nanopublication."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplateOntology",
@@ -59,5 +76,56 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/NanopubTemplateOntology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/ProvenanceTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/ProvenanceTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Provenance Template"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A template that describes the provenance of a nanopublication."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/PubinfoTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/PubinfoTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Publication Info Template"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A template that describes the publication info of a nanopublication."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/UnlistedTemplate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/UnlistedTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unlisted Template"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced)."
   } ]
 } ]

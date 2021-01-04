@@ -15,7 +15,7 @@ if [ -z $LASTRELEASE ]; then
   LASTINDEXARG=""
 else
   LASTINDEX=$(
-    cat releases/fip.index.$LASTRELEASE.trig \
+    cat releases/ntemplate.index.$LASTRELEASE.trig \
     | egrep '^@prefix this:' \
     | tail -1 \
     | sed -r 's/.*<(.*)>.*/\1/'

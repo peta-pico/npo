@@ -39,9 +39,47 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:NanopubTemplateOntology .
 }
-@prefix this: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAgnTswSJVbteT-6nqKlPqk-cpPjG6z-slHpxh4r5R6uA> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAgnTswSJVbteT-6nqKlPqk-cpPjG6z-slHpxh4r5R6uA#> .
+
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/NanopubTemplate/RAMVTcTy4SF9eRG2UiZ8FoUqONfVI6x7TJK4OflMsHtLA> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/NanopubTemplate/RAMVTcTy4SF9eRG2UiZ8FoUqONfVI6x7TJK4OflMsHtLA#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/NanopubTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:NanopubTemplate a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "Nanopublication Template"@en;
+    skos:definition "A template that describes a part of a nanopublication."@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:introduces nt:NanopubTemplate .
+}
+@prefix this: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAIQqvzp_ZTygejQb11eXong_J8KmEn9VRZ5MfrVFurCI> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAIQqvzp_ZTygejQb11eXong_J8KmEn9VRZ5MfrVFurCI#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/AssertionTemplate> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -60,10 +98,10 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:AssertionTemplate a owl:Class;
-    rdfs:isDefinedBy latest:;
+  nt:AssertionTemplate rdfs:isDefinedBy latest:;
     rdfs:label "Assertion Template"@en;
-    skos:definition "This is a template that describes the assertion of a nanopublication."@en .
+    rdfs:subClassOf nt:NanopubTemplate;
+    skos:definition "A template that describes the assertion of a nanopublication."@en .
 }
 
 sub:provenance {
@@ -71,8 +109,123 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-04T15:35:14.066+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:AssertionTemplate .
+    npx:introduces nt:AssertionTemplate;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAgnTswSJVbteT-6nqKlPqk-cpPjG6z-slHpxh4r5R6uA> .
+}
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/ProvenanceTemplate/RAhI0qp_744BVxmwmk61Jz-V4fYJ-VSwimhdZkkMDaCnU> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/ProvenanceTemplate/RAhI0qp_744BVxmwmk61Jz-V4fYJ-VSwimhdZkkMDaCnU#> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/ProvenanceTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:ProvenanceTemplate rdfs:isDefinedBy latest:;
+    rdfs:label "Provenance Template"@en;
+    rdfs:subClassOf nt:NanopubTemplate;
+    skos:definition "A template that describes the provenance of a nanopublication."@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:introduces nt:ProvenanceTemplate .
+}
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/PubinfoTemplate/RAecgLTo5xY96UaOJe1Ddi8LIBUtnj3MRM-IT34vd8v9U> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/PubinfoTemplate/RAecgLTo5xY96UaOJe1Ddi8LIBUtnj3MRM-IT34vd8v9U#> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/PubinfoTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:PubinfoTemplate rdfs:isDefinedBy latest:;
+    rdfs:label "Publication Info Template"@en;
+    rdfs:subClassOf nt:NanopubTemplate;
+    skos:definition "A template that describes the publication info of a nanopublication."@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:introduces nt:PubinfoTemplate .
+}
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/UnlistedTemplate/RAyWE3LSBWYpgyWvMhjdp0rCj7H5DxR5UM-t6shWy1V7Q> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/UnlistedTemplate/RAyWE3LSBWYpgyWvMhjdp0rCj7H5DxR5UM-t6shWy1V7Q#> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/UnlistedTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:UnlistedTemplate rdfs:isDefinedBy latest:;
+    rdfs:label "Unlisted Template"@en;
+    rdfs:subClassOf nt:NanopubTemplate;
+    skos:definition "A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced)."@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:introduces nt:UnlistedTemplate .
 }
