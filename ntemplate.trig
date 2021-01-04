@@ -1,0 +1,45 @@
+@prefix this: <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/RAZjHxiw9KO_pJ40GhZkNabGDxuMB1YVXfY97VizneASs> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/RAZjHxiw9KO_pJ40GhZkNabGDxuMB1YVXfY97VizneASs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:AssertionTemplate a owl:Class;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "Assertion Template"@en;
+    skos:definition "This is a template that describes the assertion of a nanopublication."@en .
+  
+  nt:NP-Template-Ontology dct:creator orcid:0000-0002-1267-0234;
+    dct:description "This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.";
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    dct:title "Nanopublication Template Ontology";
+    vann:preferredNamespacePrefix "nt";
+    vann:preferredNamespaceUri "https://w3id.org/np/o/ntemplate/";
+    a owl:Ontology;
+    rdfs:isDefinedBy latest: .
+}
+
+sub:provenance {
+  sub:assertion orcid:0000-0002-1267-0234 ""^^xsd:integer .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-04T15:07:48.470+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}

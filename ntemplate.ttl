@@ -1,0 +1,31 @@
+# The content of this file is automatically extracted from ntemplate.trig.
+# Changes should be made in ntemplate.trig.pre.
+
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+rdfs:seeAlso a owl:ObjectProperty .
+
+<https://w3id.org/np/o/ntemplate/AssertionTemplate> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Assertion Template"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "This is a template that describes the assertion of a nanopublication."@en .
+
+<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> a <http://www.w3.org/2002/07/owl#Ontology>;
+  <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1267-0234>;
+  <http://purl.org/dc/terms/description> "This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.";
+  <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/>;
+  <http://purl.org/dc/terms/title> "Nanopublication Template Ontology";
+  <http://purl.org/vocab/vann/preferredNamespacePrefix> "nt";
+  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/np/o/ntemplate/";
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .

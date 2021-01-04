@@ -1,0 +1,90 @@
+# Use this file (with '.pre' extension) for editing. The respective file
+# without that extension is automatically generated.
+
+
+# Introduce ontology:
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:NP-Template-Ontology a owl:Ontology ;
+    vann:preferredNamespaceUri "https://w3id.org/np/o/ntemplate/" ;
+    vann:preferredNamespacePrefix "nt" ;
+    dct:title "Nanopublication Template Ontology" ;
+    dct:description "This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves." ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-04T15:07:48.470+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Class definitions:
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/FIP-Ontology/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:AssertionTemplate rdfs:label "Assertion Template"@en ;
+    a owl:Class ;
+    skos:definition "This is a template that describes the assertion of a nanopublication."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-04T15:07:48.470+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
