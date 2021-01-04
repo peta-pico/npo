@@ -117,9 +117,57 @@
 
 
     <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/AssertionTemplate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/NanopubTemplate"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/AssertionTemplate"/>
         <rdfs:label xml:lang="en">Assertion Template</rdfs:label>
-        <skos:definition xml:lang="en">This is a template that describes the assertion of a nanopublication.</skos:definition>
+        <skos:definition xml:lang="en">A template that describes the assertion of a nanopublication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/NanopubTemplate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/NanopubTemplate">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/NanopubTemplate"/>
+        <rdfs:label xml:lang="en">Nanopublication Template</rdfs:label>
+        <skos:definition xml:lang="en">A template that describes a part of a nanopublication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/ProvenanceTemplate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/ProvenanceTemplate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/NanopubTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/ProvenanceTemplate"/>
+        <rdfs:label xml:lang="en">Provenance Template</rdfs:label>
+        <skos:definition xml:lang="en">A template that describes the provenance of a nanopublication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/PubinfoTemplate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/PubinfoTemplate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/NanopubTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/PubinfoTemplate"/>
+        <rdfs:label xml:lang="en">Publication Info Template</rdfs:label>
+        <skos:definition xml:lang="en">A template that describes the publication info of a nanopublication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/UnlistedTemplate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/UnlistedTemplate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/NanopubTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/UnlistedTemplate"/>
+        <rdfs:label xml:lang="en">Unlisted Template</rdfs:label>
+        <skos:definition xml:lang="en">A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced).</skos:definition>
     </owl:Class>
 </rdf:RDF>
 
