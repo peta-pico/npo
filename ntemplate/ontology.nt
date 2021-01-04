@@ -1,11 +1,11 @@
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1267-0234> .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://purl.org/dc/terms/description> "This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves." .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://purl.org/dc/terms/title> "Nanopublication Template Ontology" .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nt" .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/np/o/ntemplate/" .
-<https://w3id.org/np/o/ntemplate/NP-Template-Ontology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1267-0234> .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://purl.org/dc/terms/description> "This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves." .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://purl.org/dc/terms/title> "Nanopublication Template Ontology" .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nt" .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/np/o/ntemplate/" .
+<https://w3id.org/np/o/ntemplate/NanopubTemplateOntology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/NanopubTemplateOntology> .
 # 
 # 
 # #################################################################
@@ -59,7 +59,7 @@
 # 
 # https://w3id.org/np/o/ntemplate/AssertionTemplate
 <https://w3id.org/np/o/ntemplate/AssertionTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/np/o/ntemplate/AssertionTemplate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/FIP-Ontology> .
+<https://w3id.org/np/o/ntemplate/AssertionTemplate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/AssertionTemplate> .
 <https://w3id.org/np/o/ntemplate/AssertionTemplate> <http://www.w3.org/2000/01/rdf-schema#label> "Assertion Template"@en .
 <https://w3id.org/np/o/ntemplate/AssertionTemplate> <http://www.w3.org/2004/02/skos/core#definition> "This is a template that describes the assertion of a nanopublication."@en .
 # 

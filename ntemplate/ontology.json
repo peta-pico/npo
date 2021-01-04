@@ -26,7 +26,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/latest/FIP-Ontology"
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/AssertionTemplate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37,7 +37,7 @@
     "@value" : "This is a template that describes the assertion of a nanopublication."
   } ]
 }, {
-  "@id" : "https://w3id.org/np/o/ntemplate/NP-Template-Ontology",
+  "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplateOntology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://orcid.org/0000-0002-1267-0234"
@@ -58,6 +58,6 @@
     "@value" : "https://w3id.org/np/o/ntemplate/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/latest/FIP-Ontology"
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/NanopubTemplateOntology"
   } ]
 } ]
