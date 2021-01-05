@@ -36,6 +36,13 @@
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# https://w3id.org/np/o/ntemplate/possibleValue
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValue> .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#label> "possible value"@en .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#UriPlaceholder> .
+# 
 # 
 # 
 # #################################################################
@@ -48,6 +55,25 @@
 # http://www.w3.org/2000/01/rdf-schema#seeAlso
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# https://w3id.org/np/o/ntemplate/hasDefaultProvenance
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#AssertionTemplate> .
+<http://www.nanopub.org/nschema#AssertionTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/ProvenanceTemplate> .
+<https://w3id.org/np/o/ntemplate/ProvenanceTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasDefaultProvenance> .
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> <http://www.w3.org/2000/01/rdf-schema#label> "has default provenance"@en .
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the default provenance template for a given assertion template."@en .
+# 
+# https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#AssertionTemplate> .
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/PubinfoTemplate> .
+<https://w3id.org/np/o/ntemplate/PubinfoTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasRequiredPubinfoElement> .
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> <http://www.w3.org/2000/01/rdf-schema#label> "has required publication info element"@en .
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> <http://www.w3.org/2004/02/skos/core#definition> "Indicates the template of a required publication info element for a given assertion template."@en .
+# 
 # https://w3id.org/np/o/ntemplate/hasStatement
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/TemplateStatement> .
@@ -55,12 +81,20 @@
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2000/01/rdf-schema#label> "has statement"@en .
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
 # 
+# https://w3id.org/np/o/ntemplate/possibleValuesFrom
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#UriPlaceholder> .
+<http://www.nanopub.org/nschema#UriPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.nanopub.org/nschema#Nanopublication> .
+<http://www.nanopub.org/nschema#Nanopublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValuesFrom> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#label> "possible values from"@en .
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2004/02/skos/core#definition> "Points to a nanopublication with possible values for a given restricted-choice or guided-choice placeholder."@en .
+# 
 # https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate
 <https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication> .
-<http://www.nanopub.org/nschema#Nanopublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/ProvenanceTemplate> .
-<https://w3id.org/np/o/ntemplate/ProvenanceTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> <http://www.w3.org/2000/01/rdf-schema#label> "was created from provenance template"@en .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given provenance template."@en .
@@ -69,7 +103,6 @@
 <https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/PubinfoTemplate> .
-<https://w3id.org/np/o/ntemplate/PubinfoTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate> .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> <http://www.w3.org/2000/01/rdf-schema#label> "was created from publication info template"@en .
 <https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given publication info template."@en .
@@ -87,12 +120,69 @@
 # 
 # #################################################################
 # #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/np/o/ntemplate/hasPrefix
+<https://w3id.org/np/o/ntemplate/hasPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/hasPrefix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#UriPlaceholder> .
+<https://w3id.org/np/o/ntemplate/hasPrefix> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasPrefix> .
+<https://w3id.org/np/o/ntemplate/hasPrefix> <http://www.w3.org/2000/01/rdf-schema#label> "has prefix"@en .
+<https://w3id.org/np/o/ntemplate/hasPrefix> <http://www.w3.org/2004/02/skos/core#definition> "Specifies a necessary URI prefix for a URI placeholder."@en .
+# 
+# https://w3id.org/np/o/ntemplate/hasPrefixLabel
+<https://w3id.org/np/o/ntemplate/hasPrefixLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/hasPrefixLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#UriPlaceholder> .
+<https://w3id.org/np/o/ntemplate/hasPrefixLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasPrefixLabel> .
+<https://w3id.org/np/o/ntemplate/hasPrefixLabel> <http://www.w3.org/2000/01/rdf-schema#label> "has prefix label"@en .
+<https://w3id.org/np/o/ntemplate/hasPrefixLabel> <http://www.w3.org/2004/02/skos/core#definition> "Specifies a label for the prefix part of a URI to be shown in the user interface."@en .
+# 
+# https://w3id.org/np/o/ntemplate/hasRegex
+<https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Placeholder> .
+<http://www.nanopub.org/nschema#Placeholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasRegex> .
+<https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/2000/01/rdf-schema#label> "has regular expression"@en .
+<https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/2004/02/skos/core#definition> "Specifies a regular expression pattern restricting the possible values for the given placeholder."@en .
+# 
+# https://w3id.org/np/o/ntemplate/possibleValuesFromApi
+<https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#GuidedChoicePlaceholder> .
+<http://www.nanopub.org/nschema#GuidedChoicePlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValuesFromApi> .
+<https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/2000/01/rdf-schema#label> "possible values from API"@en .
+<https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/2004/02/skos/core#definition> "Specifies a URL pattern for an API to search for possible values for a guided-choice placeholder."@en .
+# 
+# https://w3id.org/np/o/ntemplate/statementOrder
+<https://w3id.org/np/o/ntemplate/statementOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/statementOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#NanopubTemplate> .
+<http://www.nanopub.org/nschema#NanopubTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/statementOrder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/statementOrder> .
+<https://w3id.org/np/o/ntemplate/statementOrder> <http://www.w3.org/2000/01/rdf-schema#label> "statement order"@en .
+<https://w3id.org/np/o/ntemplate/statementOrder> <http://www.w3.org/2004/02/skos/core#definition> "Specifies an integer value that defines the order in which statements appear."@en .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Classes
 # #
 # #################################################################
 # 
 # 
+# http://www.nanopub.org/nschema#AssertionTemplate
+# 
+# http://www.nanopub.org/nschema#GuidedChoicePlaceholder
+# 
+# http://www.nanopub.org/nschema#NanopubTemplate
+# 
 # http://www.nanopub.org/nschema#Nanopublication
+# 
+# http://www.nanopub.org/nschema#Placeholder
+# 
+# http://www.nanopub.org/nschema#UriPlaceholder
 # 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -118,6 +208,12 @@
 <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder> .
 <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "Guided-Choice Placeholder"@en .
 <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs."@en .
+# 
+# https://w3id.org/np/o/ntemplate/IntroducedResource
+<https://w3id.org/np/o/ntemplate/IntroducedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/IntroducedResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/IntroducedResource> .
+<https://w3id.org/np/o/ntemplate/IntroducedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Introduced Resource"@en .
+<https://w3id.org/np/o/ntemplate/IntroducedResource> <http://www.w3.org/2004/02/skos/core#definition> "A resource in a template that represents a thing that is introduced (i.e. is referenced with 'npx:introduces' in the publication info of the nanopublications created from the template)."@en .
 # 
 # https://w3id.org/np/o/ntemplate/LiteralPlaceholder
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -199,5 +295,18 @@
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder> .
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "URI Placeholder"@en .
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/np/o/ntemplate/CREATOR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/CREATOR> .
+<https://w3id.org/np/o/ntemplate/CREATOR> <http://www.w3.org/2000/01/rdf-schema#label> "creator of the given nanopublication"@en .
+<https://w3id.org/np/o/ntemplate/CREATOR> <http://www.w3.org/2004/02/skos/core#definition> "This placeholder instance stands for the creator of the nanopublication."@en .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
