@@ -101,6 +101,57 @@
     
 
 
+    <!-- https://w3id.org/np/o/ntemplate/hasStatement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/hasStatement">
+        <rdfs:range rdf:resource="https://w3id.org/np/o/ntemplate/TemplateStatement"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/hasStatement"/>
+        <rdfs:label xml:lang="en">has statement</rdfs:label>
+        <skos:definition xml:lang="en">Connects an assertion template or a statement group within an assertion template to its included statements.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate">
+        <rdfs:domain rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <rdfs:range rdf:resource="https://w3id.org/np/o/ntemplate/ProvenanceTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate"/>
+        <rdfs:label xml:lang="en">was created from provenance template</rdfs:label>
+        <skos:definition xml:lang="en">Denotes that a nanopublication was created from the given provenance template.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate">
+        <rdfs:domain rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <rdfs:range rdf:resource="https://w3id.org/np/o/ntemplate/PubinfoTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate"/>
+        <rdfs:label xml:lang="en">was created from publication info template</rdfs:label>
+        <skos:definition xml:lang="en">Denotes that a nanopublication was created from the given publication info template.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate">
+        <rdfs:domain rdf:resource="http://www.nanopub.org/nschema#Nanopublication"/>
+        <rdfs:range rdf:resource="https://w3id.org/np/o/ntemplate/AssertionTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate"/>
+        <rdfs:label xml:lang="en">was created from template</rdfs:label>
+        <skos:definition xml:lang="en">Denotes that a nanopublication was created from the given assertion template.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -110,6 +161,22 @@
      -->
 
 
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Nanopublication -->
+
+
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#Nanopublication"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/TemplateStatement"/>
+    </owl:Class>
     
 
 
@@ -125,6 +192,42 @@
     
 
 
+    <!-- https://w3id.org/np/o/ntemplate/GroupedStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/GroupedStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/TemplateStatement"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/GroupedStatement"/>
+        <rdfs:label xml:lang="en">Grouped Statement</rdfs:label>
+        <skos:definition xml:lang="en">A statement that grouped and thereby includes several simple statements.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/URIPlaceholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder"/>
+        <rdfs:label xml:lang="en">Guided-Choice Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/LiteralPlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/Placeholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder"/>
+        <rdfs:label xml:lang="en">Literal Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals).</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/np/o/ntemplate/NanopubTemplate -->
 
 
@@ -132,6 +235,29 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/NanopubTemplate"/>
         <rdfs:label xml:lang="en">Nanopublication Template</rdfs:label>
         <skos:definition xml:lang="en">A template that describes a part of a nanopublication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/OptionalStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/OptionalStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/TemplateStatement"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/OptionalStatement"/>
+        <rdfs:label xml:lang="en">Optional Statement</rdfs:label>
+        <skos:definition xml:lang="en">A statement that is optional.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/Placeholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/Placeholder">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/Placeholder"/>
+        <rdfs:label xml:lang="en">Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder corresponding to an input component like a text field in a template.</skos:definition>
     </owl:Class>
     
 
@@ -160,6 +286,60 @@
     
 
 
+    <!-- https://w3id.org/np/o/ntemplate/RepeatableStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/RepeatableStatement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/TemplateStatement"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/RepeatableStatement"/>
+        <rdfs:label xml:lang="en">Repeatable Statement</rdfs:label>
+        <skos:definition xml:lang="en">A statement that can be repeated several times when the template is used.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/URIPlaceholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder"/>
+        <rdfs:label xml:lang="en">Restricted-Choice Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for any URI of a pre-defined set of possible values.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/TemplateStatement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/TemplateStatement">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/TemplateStatement"/>
+        <rdfs:label xml:lang="en">Template Statement</rdfs:label>
+        <skos:definition xml:lang="en">A statement (simple or grouped) that is part of a template.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/URIPlaceholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder"/>
+        <rdfs:label xml:lang="en">Trusty URI Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for any trusty URI (of a possibly restricted set).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/URIPlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/URIPlaceholder"/>
+    
+
+
     <!-- https://w3id.org/np/o/ntemplate/UnlistedTemplate -->
 
 
@@ -168,6 +348,18 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/UnlistedTemplate"/>
         <rdfs:label xml:lang="en">Unlisted Template</rdfs:label>
         <skos:definition xml:lang="en">A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/UriPlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/UriPlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/Placeholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/UriPlaceholder"/>
+        <rdfs:label xml:lang="en">URI Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for any URI (of a possibly restricted set of URIs).</skos:definition>
     </owl:Class>
 </rdf:RDF>
 

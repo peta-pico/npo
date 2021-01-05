@@ -55,9 +55,53 @@
 rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 
+###  https://w3id.org/np/o/ntemplate/hasStatement
+<https://w3id.org/np/o/ntemplate/hasStatement> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <https://w3id.org/np/o/ntemplate/TemplateStatement> ;
+                                               rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasStatement> ;
+                                               rdfs:label "has statement"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate
+<https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://www.nanopub.org/nschema#Nanopublication> ;
+                                                                   rdfs:range <https://w3id.org/np/o/ntemplate/ProvenanceTemplate> ;
+                                                                   rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate> ;
+                                                                   rdfs:label "was created from provenance template"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given provenance template."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate
+<https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://www.nanopub.org/nschema#Nanopublication> ;
+                                                                rdfs:range <https://w3id.org/np/o/ntemplate/PubinfoTemplate> ;
+                                                                rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate> ;
+                                                                rdfs:label "was created from publication info template"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given publication info template."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate
+<https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://www.nanopub.org/nschema#Nanopublication> ;
+                                                         rdfs:range <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                                                         rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate> ;
+                                                         rdfs:label "was created from template"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given assertion template."@en .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.nanopub.org/nschema#Nanopublication
+<http://www.nanopub.org/nschema#Nanopublication> rdf:type owl:Class .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+rdf:Statement rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/np/o/ntemplate/TemplateStatement> .
+
 
 ###  https://w3id.org/np/o/ntemplate/AssertionTemplate
 <https://w3id.org/np/o/ntemplate/AssertionTemplate> rdf:type owl:Class ;
@@ -67,11 +111,50 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
                                                     <http://www.w3.org/2004/02/skos/core#definition> "A template that describes the assertion of a nanopublication."@en .
 
 
+###  https://w3id.org/np/o/ntemplate/GroupedStatement
+<https://w3id.org/np/o/ntemplate/GroupedStatement> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/np/o/ntemplate/TemplateStatement> ;
+                                                   rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/GroupedStatement> ;
+                                                   rdfs:label "Grouped Statement"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A statement that grouped and thereby includes several simple statements."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder
+<https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://w3id.org/np/o/ntemplate/URIPlaceholder> ;
+                                                          rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder> ;
+                                                          rdfs:label "Guided-Choice Placeholder"@en ;
+                                                          <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/LiteralPlaceholder
+<https://w3id.org/np/o/ntemplate/LiteralPlaceholder> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <https://w3id.org/np/o/ntemplate/Placeholder> ;
+                                                     rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder> ;
+                                                     rdfs:label "Literal Placeholder"@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."@en .
+
+
 ###  https://w3id.org/np/o/ntemplate/NanopubTemplate
 <https://w3id.org/np/o/ntemplate/NanopubTemplate> rdf:type owl:Class ;
                                                   rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/NanopubTemplate> ;
                                                   rdfs:label "Nanopublication Template"@en ;
                                                   <http://www.w3.org/2004/02/skos/core#definition> "A template that describes a part of a nanopublication."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/OptionalStatement
+<https://w3id.org/np/o/ntemplate/OptionalStatement> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/np/o/ntemplate/TemplateStatement> ;
+                                                    rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/OptionalStatement> ;
+                                                    rdfs:label "Optional Statement"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A statement that is optional."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/Placeholder
+<https://w3id.org/np/o/ntemplate/Placeholder> rdf:type owl:Class ;
+                                              rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/Placeholder> ;
+                                              rdfs:label "Placeholder"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "A placeholder corresponding to an input component like a text field in a template."@en .
 
 
 ###  https://w3id.org/np/o/ntemplate/ProvenanceTemplate
@@ -90,12 +173,55 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
                                                   <http://www.w3.org/2004/02/skos/core#definition> "A template that describes the publication info of a nanopublication."@en .
 
 
+###  https://w3id.org/np/o/ntemplate/RepeatableStatement
+<https://w3id.org/np/o/ntemplate/RepeatableStatement> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/np/o/ntemplate/TemplateStatement> ;
+                                                      rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/RepeatableStatement> ;
+                                                      rdfs:label "Repeatable Statement"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "A statement that can be repeated several times when the template is used."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder
+<https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <https://w3id.org/np/o/ntemplate/URIPlaceholder> ;
+                                                              rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder> ;
+                                                              rdfs:label "Restricted-Choice Placeholder"@en ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI of a pre-defined set of possible values."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/TemplateStatement
+<https://w3id.org/np/o/ntemplate/TemplateStatement> rdf:type owl:Class ;
+                                                    rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/TemplateStatement> ;
+                                                    rdfs:label "Template Statement"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A statement (simple or grouped) that is part of a template."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder
+<https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/np/o/ntemplate/URIPlaceholder> ;
+                                                       rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder> ;
+                                                       rdfs:label "Trusty URI Placeholder"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any trusty URI (of a possibly restricted set)."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/URIPlaceholder
+<https://w3id.org/np/o/ntemplate/URIPlaceholder> rdf:type owl:Class .
+
+
 ###  https://w3id.org/np/o/ntemplate/UnlistedTemplate
 <https://w3id.org/np/o/ntemplate/UnlistedTemplate> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://w3id.org/np/o/ntemplate/NanopubTemplate> ;
                                                    rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/UnlistedTemplate> ;
                                                    rdfs:label "Unlisted Template"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced)."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/UriPlaceholder
+<https://w3id.org/np/o/ntemplate/UriPlaceholder> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/np/o/ntemplate/Placeholder> ;
+                                                 rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder> ;
+                                                 rdfs:label "URI Placeholder"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
