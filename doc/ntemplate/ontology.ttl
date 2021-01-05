@@ -52,7 +52,7 @@
                                                 rdfs:label "possible value"@en ;
                                                 <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en ;
                                                 rdf:type owl:AnnotationProperty ;
-                                                rdfs:domain <http://www.nanopub.org/nschema#UriPlaceholder> .
+                                                rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
 
 
 #################################################################
@@ -65,7 +65,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/hasDefaultProvenance
 <https://w3id.org/np/o/ntemplate/hasDefaultProvenance> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <http://www.nanopub.org/nschema#AssertionTemplate> ;
+                                                       rdfs:domain <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
                                                        rdfs:range <https://w3id.org/np/o/ntemplate/ProvenanceTemplate> ;
                                                        rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasDefaultProvenance> ;
                                                        rdfs:label "has default provenance"@en ;
@@ -74,7 +74,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement
 <https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> rdf:type owl:ObjectProperty ;
-                                                            rdfs:domain <http://www.nanopub.org/nschema#AssertionTemplate> ;
+                                                            rdfs:domain <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
                                                             rdfs:range <https://w3id.org/np/o/ntemplate/PubinfoTemplate> ;
                                                             rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasRequiredPubinfoElement> ;
                                                             rdfs:label "has required publication info element"@en ;
@@ -91,7 +91,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/possibleValuesFrom
 <https://w3id.org/np/o/ntemplate/possibleValuesFrom> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <http://www.nanopub.org/nschema#UriPlaceholder> ;
+                                                     rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                                      rdfs:range <http://www.nanopub.org/nschema#Nanopublication> ;
                                                      rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/possibleValuesFrom> ;
                                                      rdfs:label "possible values from"@en ;
@@ -131,7 +131,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/hasPrefix
 <https://w3id.org/np/o/ntemplate/hasPrefix> rdf:type owl:DatatypeProperty ;
-                                            rdfs:domain <http://www.nanopub.org/nschema#UriPlaceholder> ;
+                                            rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                             rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasPrefix> ;
                                             rdfs:label "has prefix"@en ;
                                             <http://www.w3.org/2004/02/skos/core#definition> "Specifies a necessary URI prefix for a URI placeholder."@en .
@@ -139,7 +139,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/hasPrefixLabel
 <https://w3id.org/np/o/ntemplate/hasPrefixLabel> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://www.nanopub.org/nschema#UriPlaceholder> ;
+                                                 rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                                  rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasPrefixLabel> ;
                                                  rdfs:label "has prefix label"@en ;
                                                  <http://www.w3.org/2004/02/skos/core#definition> "Specifies a label for the prefix part of a URI to be shown in the user interface."@en .
@@ -147,7 +147,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/hasRegex
 <https://w3id.org/np/o/ntemplate/hasRegex> rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain <http://www.nanopub.org/nschema#Placeholder> ;
+                                           rdfs:domain <https://w3id.org/np/o/ntemplate/Placeholder> ;
                                            rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasRegex> ;
                                            rdfs:label "has regular expression"@en ;
                                            <http://www.w3.org/2004/02/skos/core#definition> "Specifies a regular expression pattern restricting the possible values for the given placeholder."@en .
@@ -155,7 +155,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/possibleValuesFromApi
 <https://w3id.org/np/o/ntemplate/possibleValuesFromApi> rdf:type owl:DatatypeProperty ;
-                                                        rdfs:domain <http://www.nanopub.org/nschema#GuidedChoicePlaceholder> ;
+                                                        rdfs:domain <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> ;
                                                         rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/possibleValuesFromApi> ;
                                                         rdfs:label "possible values from API"@en ;
                                                         <http://www.w3.org/2004/02/skos/core#definition> "Specifies a URL pattern for an API to search for possible values for a guided-choice placeholder."@en .
@@ -163,7 +163,7 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/np/o/ntemplate/statementOrder
 <https://w3id.org/np/o/ntemplate/statementOrder> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://www.nanopub.org/nschema#NanopubTemplate> ;
+                                                 rdfs:domain <https://w3id.org/np/o/ntemplate/NanopubTemplate> ;
                                                  rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/statementOrder> ;
                                                  rdfs:label "statement order"@en ;
                                                  <http://www.w3.org/2004/02/skos/core#definition> "Specifies an integer value that defines the order in which statements appear."@en .
@@ -173,28 +173,9 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  http://www.nanopub.org/nschema#AssertionTemplate
-<http://www.nanopub.org/nschema#AssertionTemplate> rdf:type owl:Class .
-
-
-###  http://www.nanopub.org/nschema#GuidedChoicePlaceholder
-<http://www.nanopub.org/nschema#GuidedChoicePlaceholder> rdf:type owl:Class .
-
-
-###  http://www.nanopub.org/nschema#NanopubTemplate
-<http://www.nanopub.org/nschema#NanopubTemplate> rdf:type owl:Class .
-
-
 ###  http://www.nanopub.org/nschema#Nanopublication
-<http://www.nanopub.org/nschema#Nanopublication> rdf:type owl:Class .
-
-
-###  http://www.nanopub.org/nschema#Placeholder
-<http://www.nanopub.org/nschema#Placeholder> rdf:type owl:Class .
-
-
-###  http://www.nanopub.org/nschema#UriPlaceholder
-<http://www.nanopub.org/nschema#UriPlaceholder> rdf:type owl:Class .
+<http://www.nanopub.org/nschema#Nanopublication> rdf:type owl:Class ;
+                                                 rdfs:label "Nanopublication" .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
@@ -220,7 +201,7 @@ rdf:Statement rdf:type owl:Class ;
 
 ###  https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder
 <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> rdf:type owl:Class ;
-                                                          rdfs:subClassOf <https://w3id.org/np/o/ntemplate/URIPlaceholder> ;
+                                                          rdfs:subClassOf <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                                           rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder> ;
                                                           rdfs:label "Guided-Choice Placeholder"@en ;
                                                           <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs."@en .
@@ -289,7 +270,7 @@ rdf:Statement rdf:type owl:Class ;
 
 ###  https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder
 <https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <https://w3id.org/np/o/ntemplate/URIPlaceholder> ;
+                                                              rdfs:subClassOf <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                                               rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder> ;
                                                               rdfs:label "Restricted-Choice Placeholder"@en ;
                                                               <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI of a pre-defined set of possible values."@en .
@@ -304,14 +285,10 @@ rdf:Statement rdf:type owl:Class ;
 
 ###  https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder
 <https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder> rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/np/o/ntemplate/URIPlaceholder> ;
+                                                       rdfs:subClassOf <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                                        rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder> ;
                                                        rdfs:label "Trusty URI Placeholder"@en ;
                                                        <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any trusty URI (of a possibly restricted set)."@en .
-
-
-###  https://w3id.org/np/o/ntemplate/URIPlaceholder
-<https://w3id.org/np/o/ntemplate/URIPlaceholder> rdf:type owl:Class .
 
 
 ###  https://w3id.org/np/o/ntemplate/UnlistedTemplate
@@ -331,11 +308,13 @@ rdf:Statement rdf:type owl:Class ;
 
 
 #################################################################
-#    Annotations
+#    Individuals
 #################################################################
 
-<https://w3id.org/np/o/ntemplate/CREATOR> rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/CREATOR> ;
-                                          rdfs:label "creator of the given nanopublication"@en ;
+###  https://w3id.org/np/o/ntemplate/CREATOR
+<https://w3id.org/np/o/ntemplate/CREATOR> rdf:type owl:NamedIndividual ;
+                                          rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/CREATOR> ;
+                                          rdfs:label "CREATOR"@en ;
                                           <http://www.w3.org/2004/02/skos/core#definition> "This placeholder instance stands for the creator of the nanopublication."@en .
 
 

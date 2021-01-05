@@ -17,23 +17,11 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.nanopub.org/nschema#AssertionTemplate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.nanopub.org/nschema#GuidedChoicePlaceholder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.nanopub.org/nschema#NanopubTemplate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://www.nanopub.org/nschema#Nanopublication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.nanopub.org/nschema#Placeholder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.nanopub.org/nschema#UriPlaceholder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Nanopublication"
+  } ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -65,12 +53,13 @@
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/CREATOR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/CREATOR"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "creator of the given nanopublication"
+    "@value" : "CREATOR"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -104,7 +93,7 @@
     "@value" : "Guided-Choice Placeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/URIPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -272,7 +261,7 @@
     "@value" : "Restricted-Choice Placeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/URIPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -303,15 +292,12 @@
     "@value" : "Trusty URI Placeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/URIPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A placeholder that stands for any trusty URI (of a possibly restricted set)."
   } ]
-}, {
-  "@id" : "https://w3id.org/np/o/ntemplate/URIPlaceholder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/UnlistedTemplate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -350,7 +336,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/hasDefaultProvenance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#AssertionTemplate"
+    "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/hasDefaultProvenance"
@@ -370,7 +356,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/hasPrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#UriPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/hasPrefix"
@@ -387,7 +373,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/hasPrefixLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#UriPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/hasPrefixLabel"
@@ -404,7 +390,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/hasRegex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#Placeholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/Placeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/hasRegex"
@@ -421,7 +407,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#AssertionTemplate"
+    "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/hasRequiredPubinfoElement"
@@ -458,7 +444,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/possibleValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#UriPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/possibleValue"
@@ -475,7 +461,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/possibleValuesFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#UriPlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/possibleValuesFrom"
@@ -495,7 +481,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/possibleValuesFromApi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#GuidedChoicePlaceholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/possibleValuesFromApi"
@@ -512,7 +498,7 @@
   "@id" : "https://w3id.org/np/o/ntemplate/statementOrder",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.nanopub.org/nschema#NanopubTemplate"
+    "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/statementOrder"

@@ -42,7 +42,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplateOntology .
@@ -84,7 +84,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplate .
@@ -124,7 +124,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:AssertionTemplate .
@@ -164,7 +164,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:ProvenanceTemplate .
@@ -204,7 +204,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:PubinfoTemplate .
@@ -244,7 +244,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:UnlistedTemplate .
@@ -285,7 +285,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:TemplateStatement .
@@ -325,7 +325,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:OptionalStatement .
@@ -365,7 +365,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:GroupedStatement .
@@ -405,7 +405,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:RepeatableStatement .
@@ -445,7 +445,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:Placeholder .
@@ -485,7 +485,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:UriPlaceholder .
@@ -515,7 +515,7 @@
 
 :assertion {
   nt:TrustyUriPlaceholder rdfs:label "Trusty URI Placeholder"@en ;
-    rdfs:subClassOf nt:URIPlaceholder ;
+    rdfs:subClassOf nt:UriPlaceholder ;
     skos:definition "A placeholder that stands for any trusty URI (of a possibly restricted set)."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -525,7 +525,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:TrustyUriPlaceholder .
@@ -555,7 +555,7 @@
 
 :assertion {
   nt:RestrictedChoicePlaceholder rdfs:label "Restricted-Choice Placeholder"@en ;
-    rdfs:subClassOf nt:URIPlaceholder ;
+    rdfs:subClassOf nt:UriPlaceholder ;
     skos:definition "A placeholder that stands for any URI of a pre-defined set of possible values."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -565,7 +565,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:RestrictedChoicePlaceholder .
@@ -595,7 +595,7 @@
 
 :assertion {
   nt:GuidedChoicePlaceholder rdfs:label "Guided-Choice Placeholder"@en ;
-    rdfs:subClassOf nt:URIPlaceholder ;
+    rdfs:subClassOf nt:UriPlaceholder ;
     skos:definition "A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -605,7 +605,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:GuidedChoicePlaceholder .
@@ -645,7 +645,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:LiteralPlaceholder .
@@ -685,7 +685,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:IntroducedResource .
@@ -728,7 +728,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasStatement .
@@ -770,7 +770,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:wasCreatedFromTemplate .
@@ -812,7 +812,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:wasCreatedFromProvenanceTemplate .
@@ -854,7 +854,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:wasCreatedFromPubinfoTemplate .
@@ -885,7 +885,7 @@
 :assertion {
   nt:hasDefaultProvenance rdfs:label "has default provenance"@en ;
     a rdf:Property ;
-    rdfs:domain np:AssertionTemplate ;
+    rdfs:domain nt:AssertionTemplate ;
     rdfs:range nt:ProvenanceTemplate ;
     skos:definition "Indicates the default provenance template for a given assertion template."@en ;
     rdfs:isDefinedBy latest: .
@@ -896,7 +896,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasDefaultProvenance .
@@ -927,7 +927,7 @@
 :assertion {
   nt:hasRequiredPubinfoElement rdfs:label "has required publication info element"@en ;
     a rdf:Property ;
-    rdfs:domain np:AssertionTemplate ;
+    rdfs:domain nt:AssertionTemplate ;
     rdfs:range nt:PubinfoTemplate ;
     skos:definition "Indicates the template of a required publication info element for a given assertion template."@en ;
     rdfs:isDefinedBy latest: .
@@ -938,7 +938,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasRequiredPubinfoElement .
@@ -969,7 +969,7 @@
 :assertion {
   nt:statementOrder rdfs:label "statement order"@en ;
     a owl:DatatypeProperty ;
-    rdfs:domain np:NanopubTemplate ;
+    rdfs:domain nt:NanopubTemplate ;
     skos:definition "Specifies an integer value that defines the order in which statements appear."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -979,7 +979,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:statementOrder .
@@ -1010,7 +1010,7 @@
 :assertion {
   nt:possibleValue rdfs:label "possible value"@en ;
     a rdf:Property ;
-    rdfs:domain np:UriPlaceholder ;
+    rdfs:domain nt:UriPlaceholder ;
     skos:definition "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1020,7 +1020,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:possibleValue .
@@ -1051,7 +1051,7 @@
 :assertion {
   nt:possibleValuesFrom rdfs:label "possible values from"@en ;
     a rdf:Property ;
-    rdfs:domain np:UriPlaceholder ;
+    rdfs:domain nt:UriPlaceholder ;
     rdfs:range np:Nanopublication ;
     skos:definition "Points to a nanopublication with possible values for a given restricted-choice or guided-choice placeholder."@en ;
     rdfs:isDefinedBy latest: .
@@ -1062,7 +1062,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:possibleValuesFrom .
@@ -1093,7 +1093,7 @@
 :assertion {
   nt:possibleValuesFromApi rdfs:label "possible values from API"@en ;
     a owl:DatatypeProperty ;
-    rdfs:domain np:GuidedChoicePlaceholder ;
+    rdfs:domain nt:GuidedChoicePlaceholder ;
     skos:definition "Specifies a URL pattern for an API to search for possible values for a guided-choice placeholder."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1103,7 +1103,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:possibleValuesFromApi .
@@ -1134,7 +1134,7 @@
 :assertion {
   nt:hasPrefix rdfs:label "has prefix"@en ;
     a owl:DatatypeProperty ;
-    rdfs:domain np:UriPlaceholder ;
+    rdfs:domain nt:UriPlaceholder ;
     skos:definition "Specifies a necessary URI prefix for a URI placeholder."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1144,7 +1144,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasPrefix .
@@ -1175,7 +1175,7 @@
 :assertion {
   nt:hasPrefixLabel rdfs:label "has prefix label"@en ;
     a owl:DatatypeProperty ;
-    rdfs:domain np:UriPlaceholder ;
+    rdfs:domain nt:UriPlaceholder ;
     skos:definition "Specifies a label for the prefix part of a URI to be shown in the user interface."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1185,7 +1185,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasPrefixLabel .
@@ -1216,7 +1216,7 @@
 :assertion {
   nt:hasRegex rdfs:label "has regular expression"@en ;
     a owl:DatatypeProperty ;
-    rdfs:domain np:Placeholder ;
+    rdfs:domain nt:Placeholder ;
     skos:definition "Specifies a regular expression pattern restricting the possible values for the given placeholder."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1226,7 +1226,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasRegex .
@@ -1257,7 +1257,8 @@
 }
 
 :assertion {
-  nt:CREATOR rdfs:label "creator of the given nanopublication"@en ;
+  nt:CREATOR rdfs:label "CREATOR"@en ;
+    a owl:NamedIndividual ;
     skos:definition "This placeholder instance stands for the creator of the nanopublication."@en ;
     rdfs:isDefinedBy latest: .
 }
@@ -1267,7 +1268,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T12:59:01.040+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:CREATOR .

@@ -1,5 +1,5 @@
-@prefix this: <https://w3id.org/np/o/ntemplate/np/index/RAGKJwzzJK-UaPr9wS8e-0nZpWwhPQ3PJ6ZkBqwT5MWzc> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/index/RAGKJwzzJK-UaPr9wS8e-0nZpWwhPQ3PJ6ZkBqwT5MWzc#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/index/RAcbOAzTcHcCWAVqNKdzxT_D5PghWhFwkp0YVYlSS5olY> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/index/RAcbOAzTcHcCWAVqNKdzxT_D5PghWhFwkp0YVYlSS5olY#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
@@ -14,37 +14,37 @@ sub:Head {
 }
 
 sub:assertion {
-  this: npx:includesElement <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RASTEq-xBZ9-ShozC7-jtiWxZ6_QjV76DXVJaDNdeBA9E>,
-      <https://w3id.org/np/o/ntemplate/np/CREATOR/RAPs4Ra-lAO11eRpX34qj9FU_Y52GEp0lJ6LccKIuleMY>,
-      <https://w3id.org/np/o/ntemplate/np/GroupedStatement/RAUFNyubv-WH9FDpp7V3shExu11uOoJQ8VjFsV2zwuFHY>,
-      <https://w3id.org/np/o/ntemplate/np/GuidedChoicePlaceholder/RAJtgMz-TMJFBhtoV4YL_zJNjBWLrCgGXF1m4cg8vt0vw>,
-      <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RAIKbjyG-NizruiMgl6CCVZ2c5XO9eCPJQn44o_UqlgEs>,
-      <https://w3id.org/np/o/ntemplate/np/LiteralPlaceholder/RArSO1NIF8tfPOr9gG0gN-5PPG1abchlKhh5lzktWcjdQ>,
-      <https://w3id.org/np/o/ntemplate/np/NanopubTemplate/RAAvro4zgZN3yeNwdXJwm0jY9qcd-_LPPegeelF7AbG18>,
+  this: npx:includesElement <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAqh4nOi8AVLCuP821wuK5UQobj89hEihnoYj5H5VbvFo>,
+      <https://w3id.org/np/o/ntemplate/np/CREATOR/RAgeeQx24D9dPyylWJQjNHDPXTRndZ3b8koPRB48eDCGg>,
+      <https://w3id.org/np/o/ntemplate/np/GroupedStatement/RAjUjODfIKQEZ91xzR3fMtFp9Al-ZGHOL6taHJdlpCSlc>,
+      <https://w3id.org/np/o/ntemplate/np/GuidedChoicePlaceholder/RAiaq8GdfpfqKZfDSo_1NACqEohTjOndyg1uRwxzDwWfo>,
+      <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RArgCZ647xiRCt4U3JFaIT0B_fE20G97Tj7KAqn0ctbG0>,
+      <https://w3id.org/np/o/ntemplate/np/LiteralPlaceholder/RAFWJfj5j_LljFe4Fn2SqM32hKf6TORkB7V057NWwSm6c>,
+      <https://w3id.org/np/o/ntemplate/np/NanopubTemplate/RAs_2TVLu0WXEc2D0xRbswTsBqNHuSVvNXq36hPdAibRY>,
       <https://w3id.org/np/o/ntemplate/np/NanopubTemplateOntology/RA6-aP9t3OcdluJQZ20TvndmU-7YbecuPdUDNBJbdLbHA>,
-      <https://w3id.org/np/o/ntemplate/np/OptionalStatement/RA1cyP3HBJUFy-IcfAYmtZWq-IU1Eoy8KLr2KoL7-efZo>,
-      <https://w3id.org/np/o/ntemplate/np/Placeholder/RA5hlFBoS_ohvvBlNsNLRSRzVqAKVTtX_Ay1qwDA4Nn08>,
-      <https://w3id.org/np/o/ntemplate/np/ProvenanceTemplate/RAlw920T12e7u0dbAdkFyPlHyIU0qIAsvdBhnKxohS-NU>,
-      <https://w3id.org/np/o/ntemplate/np/PubinfoTemplate/RAT_L3nOwqO5y0VBOwGLvHWCfXMsCJJiDvZPnRE9OBPn0>,
-      <https://w3id.org/np/o/ntemplate/np/RepeatableStatement/RA8wEgRsaQrhmkNvyPNIzlwtOzQC95x2rncXyrn_ixAIA>,
-      <https://w3id.org/np/o/ntemplate/np/RestrictedChoicePlaceholder/RAT9EhzKC_14cOKNN_G2ramR7rNE2FO7Qg6r0KYix14sI>,
-      <https://w3id.org/np/o/ntemplate/np/TemplateStatement/RAti4VJn2c4pXJ3ymb3IdNojwiA4-W4rY172OdcVRAXz0>,
-      <https://w3id.org/np/o/ntemplate/np/TrustyUriPlaceholder/RAuHKebaCx1JBtysVwS1wOeMrgesI4EQm-lxuHEt1M5AU>,
-      <https://w3id.org/np/o/ntemplate/np/UnlistedTemplate/RAuUsV9Boq0h7t-KPLODaaw0d_nzlOt11bhD54VA6T77w>,
-      <https://w3id.org/np/o/ntemplate/np/UriPlaceholder/RAryF9bpK4CMqGF5Ucood6f_weq4t-znY5EdysFtQrF8c>,
-      <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RAWtGR5WBp7Fy6g8xSVmLWDkN7xSKLWX_ZLUPE5dlPGT8>,
-      <https://w3id.org/np/o/ntemplate/np/hasPrefix/RA236Wiax74sthv0HEP92QsNd5hW4PyOKRzqScSiOcQfI>,
-      <https://w3id.org/np/o/ntemplate/np/hasPrefixLabel/RAdNsveaGczDtarEiV6fW8V1JU050CMILpGEmX6pMmOoU>,
-      <https://w3id.org/np/o/ntemplate/np/hasRegex/RAL0k3bx4rn9Gsnlla0nePktXwe3qKGAYAMGNsRG9Uph4>,
-      <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RApOPOOfKiVbs1fBMr_mcmiwZOy1ee5ZYj8U1hM1QHKXM>,
-      <https://w3id.org/np/o/ntemplate/np/hasStatement/RAFaqIVAR9gng-llqJX-cEQNNTI_bYXrHOtQxO1Tyu4gY>,
-      <https://w3id.org/np/o/ntemplate/np/possibleValue/RAPTomSRmdZtXZ8Z2kgdZK9Baz0we6XiBxSNBM_kWTOfY>,
-      <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RAV2vR3RoQ7kp8J3KfeddrY97jfazactiYom25u45EKbQ>,
-      <https://w3id.org/np/o/ntemplate/np/possibleValuesFromApi/RAyOYRIMS2BT5tviV1ANtBfgy1bNoICRbYoPmgFAMrhBk>,
-      <https://w3id.org/np/o/ntemplate/np/statementOrder/RA1OGjRmvxYcB8cZpX8xmgSl_gCO3gPoWypVjwc8Muceo>,
-      <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RASL_fQVZujjvxikDA-Sw1rtvgP4ZeFk_xRBPi37uo6KA>,
-      <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAngl1XrCiD15gECkiHBu_PGNrauH6QpK7sV9zeiBCbnY>,
-      <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAuKd_fX0Tjw9Iwx5MpI_fb-LIR-IOlgqsqJa60DkJuE4> .
+      <https://w3id.org/np/o/ntemplate/np/OptionalStatement/RAHNYJQupirhvWPbsnj7KXc5-lYgo50-vZkZvl8iAp4Cc>,
+      <https://w3id.org/np/o/ntemplate/np/Placeholder/RAopmK-Lzq8ZuzzKBJKc8P7im99U6hz7p3hJaUnD64lj4>,
+      <https://w3id.org/np/o/ntemplate/np/ProvenanceTemplate/RAkAt4ve_0_cTgGzzvtpsEtYQsd_iaS5QO8UvejuhO600>,
+      <https://w3id.org/np/o/ntemplate/np/PubinfoTemplate/RAhorFmHJgVhL8DA0WnAlNybYZX3FQWsnqPu-rnaLbD6U>,
+      <https://w3id.org/np/o/ntemplate/np/RepeatableStatement/RAevX2X1gKdTRo03idpMZ4ACrTPTXlneRi6F1zTYAYLwc>,
+      <https://w3id.org/np/o/ntemplate/np/RestrictedChoicePlaceholder/RAMcuZkyt87ExpQ7gd5XkICWa1DRNf3Y2j654-am3PYAA>,
+      <https://w3id.org/np/o/ntemplate/np/TemplateStatement/RAXvDRO8jbZgAVr5F1q8EWsYSVPqpXRB92V9eLtOZuYqQ>,
+      <https://w3id.org/np/o/ntemplate/np/TrustyUriPlaceholder/RA-FjGVPx_vesekDVc963W7YOpCuzySnB_NpBt6vsPD3Q>,
+      <https://w3id.org/np/o/ntemplate/np/UnlistedTemplate/RAJegT9vVXJ2dJdV4cbXzQy3Is-5cVpjctmYpLzeSeYXg>,
+      <https://w3id.org/np/o/ntemplate/np/UriPlaceholder/RAsKaqN7kGfV7JmCWwHWSznyZhz-P6-aZIsy-B3OxkSZo>,
+      <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA3HYb1W5C98ygcWHQiM6eW7EHLuDZPSlheMihJlXIen0>,
+      <https://w3id.org/np/o/ntemplate/np/hasPrefix/RAibNVFKKyet8qwmRikenbWE0KdIkNJwgFBfNDMei-0Tg>,
+      <https://w3id.org/np/o/ntemplate/np/hasPrefixLabel/RAgoZ4S2nsN9YOJ-ps1Z6orJsmj-4SfjFRhT-yaVBNHFs>,
+      <https://w3id.org/np/o/ntemplate/np/hasRegex/RALtixrfHOhMZ-lhQ0OYqzb1fP9n7mfADEe10hF-9dXtk>,
+      <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPFpsWqhjDl9UVPRcH5mXacYIGEEpkviWNXnD4bD4fjA>,
+      <https://w3id.org/np/o/ntemplate/np/hasStatement/RAGrTc5QNX3cBOb2rAMdtpR3nxOrmB-4Jtz2luOopfUPU>,
+      <https://w3id.org/np/o/ntemplate/np/possibleValue/RAVgc5plAvaT5Mg0mY3gzPpPcusRdaBfGlB6hKqGBeTc8>,
+      <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RA35OeWl1NN7RAdEiSpGMGb5t7Rdjq_i5suS7SnP8v-fI>,
+      <https://w3id.org/np/o/ntemplate/np/possibleValuesFromApi/RAjcqqQz8NqveRj09tD0Ul43Mqkn4C71UBzRhPSVxCLZU>,
+      <https://w3id.org/np/o/ntemplate/np/statementOrder/RA6XFAVjibs7OAD2exK4N09WtkEQuF87Lc0jfmOLhOEng>,
+      <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAkxgvZ_gEBXx0TveQjjDUeeTueQ86mI6Y6p_-oEzsMX4>,
+      <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAPJsHq5XZ7u2jh7dtvp3wEfxgJY1ZvN5VpDQH8y8G2OA>,
+      <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAdUFy6AWg--LfUeRxDYPXq3A8Zr6AN_gJ3vxSRQPenvo> .
 }
 
 sub:provenance {
@@ -53,7 +53,7 @@ sub:provenance {
 
 sub:pubinfo {
   this: dce:title "Nanopublications representing the Nanopublication Template Ontology";
-    dct:created "2021-01-05T12:59:03.163+01:00"^^xsd:dateTime;
+    dct:created "2021-01-05T13:19:33.683+01:00"^^xsd:dateTime;
     dct:creator <https://orcid.org/0000-0002-1267-0234>;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:supersedes <https://w3id.org/np/o/ntemplate/np/index/RAsWN6p7SfCDHxZRjaiajJdS76sdzlEaT8sWKTUYK7z90>;
