@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Tue Jan 05 12:59:06 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Tue Jan 05 13:19:37 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -106,6 +106,9 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
    </li>
    <li>
+      <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
    </li>
    <li>
@@ -195,6 +198,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/statementOrder" title="https://w3id.org/np/o/ntemplate/statementOrder">statement order</a>
    </li>
+</ul><h4>Named Individuals</h4><ul class="hlist">
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/CREATOR" title="https://w3id.org/np/o/ntemplate/CREATOR">CREATOR</a>
+   </li>
 </ul>
 </div>
   
@@ -229,6 +236,9 @@ This section provides details for each class and property defined by Nanopublica
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
             title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
+      </li>
+      <li>
+         <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
       </li>
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
@@ -298,6 +308,14 @@ This section provides details for each class and property defined by Nanopublica
             <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/hasDefaultProvenance"
+               title="https://w3id.org/np/o/ntemplate/hasDefaultProvenance">has default provenance</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement"
+               title="https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement">has required publication info element</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate"
@@ -350,8 +368,14 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/np/o/ntemplate/URIPlaceholder">u r i placeholder</span>
+            <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/possibleValuesFromApi"
+               title="https://w3id.org/np/o/ntemplate/possibleValuesFromApi">possible values from API</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -396,6 +420,32 @@ This section provides details for each class and property defined by Nanopublica
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://www.nanopub.org/nschema#Nanopublication">
+      <h3>Nanopublication<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.nanopub.org/nschema#Nanopublication</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate"
+               title="https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate">was created from provenance template</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate"
+               title="https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate">was created from publication info template</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate"
+               title="https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate">was created from template</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/possibleValuesFrom"
+               title="https://w3id.org/np/o/ntemplate/possibleValuesFrom">possible values from</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/NanopubTemplate">
       <h3>Nanopublication Template<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -422,6 +472,11 @@ This section provides details for each class and property defined by Nanopublica
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/PubinfoTemplate" title="https://w3id.org/np/o/ntemplate/PubinfoTemplate">Publication Info Template</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/UnlistedTemplate" title="https://w3id.org/np/o/ntemplate/UnlistedTemplate">Unlisted Template</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/statementOrder" title="https://w3id.org/np/o/ntemplate/statementOrder">statement order</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -473,6 +528,11 @@ This section provides details for each class and property defined by Nanopublica
                title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/hasRegex" title="https://w3id.org/np/o/ntemplate/hasRegex">has regular expression</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -584,7 +644,7 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/np/o/ntemplate/URIPlaceholder">u r i placeholder</span>
+            <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -659,7 +719,7 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://w3id.org/np/o/ntemplate/URIPlaceholder">u r i placeholder</span>
+            <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -709,6 +769,24 @@ This section provides details for each class and property defined by Nanopublica
          <dd>
             <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
+               title="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">Guided-Choice Placeholder</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder"
+               title="https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder">Restricted-Choice Placeholder</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder"
+               title="https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder">Trusty URI Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/hasPrefix" title="https://w3id.org/np/o/ntemplate/hasPrefix">has prefix</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/np/o/ntemplate/hasPrefixLabel" title="https://w3id.org/np/o/ntemplate/hasPrefixLabel">has prefix label</a>
+            <sup class="type-dp" title="data property">dp</sup>, <span class="dotted" title="https://w3id.org/np/o/ntemplate/possibleValue">possible value</span>, <a href="#https://w3id.org/np/o/ntemplate/possibleValuesFrom"
+               title="https://w3id.org/np/o/ntemplate/possibleValuesFrom">possible values from</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -763,7 +841,8 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#AssertionTemplate">assertion template</span>
+               <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate"
+                  title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -795,7 +874,8 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#AssertionTemplate">assertion template</span>
+               <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate"
+                  title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -853,12 +933,12 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#UriPlaceholder">uri placeholder</span>
+               <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -884,7 +964,7 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -916,7 +996,7 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -947,7 +1027,7 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -999,7 +1079,7 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#UriPlaceholder">uri placeholder</span>
+               <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1025,7 +1105,7 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#UriPlaceholder">uri placeholder</span>
+               <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1051,7 +1131,7 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#Placeholder">placeholder</span>
+               <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1077,8 +1157,8 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.nanopub.org/nschema#GuidedChoicePlaceholder">guided choice placeholder</span>
+               <a href="#https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
+                  title="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">Guided-Choice Placeholder</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1104,11 +1184,35 @@ This section provides details for each class and property defined by Nanopublica
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.nanopub.org/nschema#NanopubTemplate">nanopub template</span>
+               <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/CREATOR" title="https://w3id.org/np/o/ntemplate/CREATOR">CREATOR</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/CREATOR">
+      <h3>CREATOR<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/CREATOR</p>
+      <div class="comment">
+         <span class="markdown">This placeholder instance stands for the creator of the nanopublication.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/CREATOR">https://w3id.org/np/o/ntemplate/latest/CREATOR</a>
+         </dd>
+      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
