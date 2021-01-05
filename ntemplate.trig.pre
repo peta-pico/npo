@@ -42,7 +42,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplateOntology .
@@ -84,11 +84,12 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplate .
 }
+
 
 @prefix : <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/AssertionTemplate> .
@@ -123,11 +124,12 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:AssertionTemplate .
 }
+
 
 @prefix : <https://w3id.org/np/o/ntemplate/np/ProvenanceTemplate/> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/ProvenanceTemplate> .
@@ -162,11 +164,12 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:ProvenanceTemplate .
 }
+
 
 @prefix : <https://w3id.org/np/o/ntemplate/np/PubinfoTemplate/> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/PubinfoTemplate> .
@@ -201,11 +204,12 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:PubinfoTemplate .
 }
+
 
 @prefix : <https://w3id.org/np/o/ntemplate/np/UnlistedTemplate/> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/UnlistedTemplate> .
@@ -240,9 +244,579 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-04T17:07:29.355+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:UnlistedTemplate .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/TemplateStatement/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/TemplateStatement> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:TemplateStatement rdfs:label "Template Statement"@en ;
+    a owl:Class ;
+    skos:definition "A statement (simple or grouped) that is part of a template."@en ;
+    rdfs:isDefinedBy latest: .
+  rdf:Statement rdfs:subClassOf nt:TemplateStatement .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:TemplateStatement .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/OptionalStatement/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/OptionalStatement> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:OptionalStatement rdfs:label "Optional Statement"@en ;
+    rdfs:subClassOf nt:TemplateStatement ;
+    skos:definition "A statement that is optional."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:OptionalStatement .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/GroupedStatement/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/GroupedStatement> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:GroupedStatement rdfs:label "Grouped Statement"@en ;
+    rdfs:subClassOf nt:TemplateStatement ;
+    skos:definition "A statement that grouped and thereby includes several simple statements."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:GroupedStatement .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/RepeatableStatement/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/RepeatableStatement> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:RepeatableStatement rdfs:label "Repeatable Statement"@en ;
+    rdfs:subClassOf nt:TemplateStatement ;
+    skos:definition "A statement that can be repeated several times when the template is used."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:RepeatableStatement .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/Placeholder/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/Placeholder> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:Placeholder rdfs:label "Placeholder"@en ;
+    a owl:Class ;
+    skos:definition "A placeholder corresponding to an input component like a text field in a template."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:Placeholder .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/UriPlaceholder/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:UriPlaceholder rdfs:label "URI Placeholder"@en ;
+    rdfs:subClassOf nt:Placeholder ;
+    skos:definition "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:UriPlaceholder .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/TrustyUriPlaceholder/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:TrustyUriPlaceholder rdfs:label "Trusty URI Placeholder"@en ;
+    rdfs:subClassOf nt:URIPlaceholder ;
+    skos:definition "A placeholder that stands for any trusty URI (of a possibly restricted set)."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:TrustyUriPlaceholder .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/RestrictedChoicePlaceholder/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:RestrictedChoicePlaceholder rdfs:label "Restricted-Choice Placeholder"@en ;
+    rdfs:subClassOf nt:URIPlaceholder ;
+    skos:definition "A placeholder that stands for any URI of a pre-defined set of possible values."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:RestrictedChoicePlaceholder .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/GuidedChoicePlaceholder/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:GuidedChoicePlaceholder rdfs:label "Guided-Choice Placeholder"@en ;
+    rdfs:subClassOf nt:URIPlaceholder ;
+    skos:definition "A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:GuidedChoicePlaceholder .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/LiteralPlaceholder/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:LiteralPlaceholder rdfs:label "Literal Placeholder"@en ;
+    rdfs:subClassOf nt:Placeholder ;
+    skos:definition "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:LiteralPlaceholder .
+}
+
+
+# Property definitions:
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/hasStatement/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/hasStatement> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:hasStatement rdfs:label "has statement"@en ;
+    a rdf:Property ;
+    rdfs:range nt:TemplateStatement ;
+    skos:definition "Connects an assertion template or a statement group within an assertion template to its included statements."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:hasStatement .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:wasCreatedFromTemplate rdfs:label "was created from template"@en ;
+    a rdf:Property ;
+    rdfs:domain np:Nanopublication ;
+    rdfs:range nt:AssertionTemplate ;
+    skos:definition "Denotes that a nanopublication was created from the given assertion template."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:wasCreatedFromTemplate .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:wasCreatedFromProvenanceTemplate rdfs:label "was created from provenance template"@en ;
+    a rdf:Property ;
+    rdfs:domain np:Nanopublication ;
+    rdfs:range nt:ProvenanceTemplate ;
+    skos:definition "Denotes that a nanopublication was created from the given provenance template."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:wasCreatedFromProvenanceTemplate .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:wasCreatedFromPubinfoTemplate rdfs:label "was created from publication info template"@en ;
+    a rdf:Property ;
+    rdfs:domain np:Nanopublication ;
+    rdfs:range nt:PubinfoTemplate ;
+    skos:definition "Denotes that a nanopublication was created from the given publication info template."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-05T10:52:03.922+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:wasCreatedFromPubinfoTemplate .
 }
 

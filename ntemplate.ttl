@@ -53,3 +53,91 @@ rdfs:seeAlso a owl:ObjectProperty .
   <http://www.w3.org/2000/01/rdf-schema#label> "Unlisted Template"@en;
   <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/NanopubTemplate>;
   <http://www.w3.org/2004/02/skos/core#definition> "A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced)."@en .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+    <https://w3id.org/np/o/ntemplate/TemplateStatement> .
+
+<https://w3id.org/np/o/ntemplate/TemplateStatement> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/TemplateStatement>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Template Statement"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "A statement (simple or grouped) that is part of a template."@en .
+
+<https://w3id.org/np/o/ntemplate/OptionalStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/OptionalStatement>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Optional Statement"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/TemplateStatement>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A statement that is optional."@en .
+
+<https://w3id.org/np/o/ntemplate/GroupedStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/GroupedStatement>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Grouped Statement"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/TemplateStatement>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A statement that grouped and thereby includes several simple statements."@en .
+
+<https://w3id.org/np/o/ntemplate/RepeatableStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/RepeatableStatement>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Repeatable Statement"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/TemplateStatement>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A statement that can be repeated several times when the template is used."@en .
+
+<https://w3id.org/np/o/ntemplate/Placeholder> a <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/Placeholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Placeholder"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder corresponding to an input component like a text field in a template."@en .
+
+<https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "URI Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en .
+
+<https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Trusty URI Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/URIPlaceholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any trusty URI (of a possibly restricted set)."@en .
+
+<https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Restricted-Choice Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/URIPlaceholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI of a pre-defined set of possible values."@en .
+
+<https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Guided-Choice Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/URIPlaceholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs."@en .
+
+<https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Literal Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."@en .
+
+<https://w3id.org/np/o/ntemplate/hasStatement> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasStatement>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has statement"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/TemplateStatement>;
+  <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
+
+<https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "was created from template"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
+  <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given assertion template."@en .
+
+<https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "was created from provenance template"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/ProvenanceTemplate>;
+  <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given provenance template."@en .
+
+<https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "was created from publication info template"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/PubinfoTemplate>;
+  <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given publication info template."@en .

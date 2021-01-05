@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Mon Jan 04 17:07:33 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Tue Jan 05 10:52:09 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -87,10 +87,29 @@ This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
    <li>
-      <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate" title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
+      <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate"
+         title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/GroupedStatement" title="https://w3id.org/np/o/ntemplate/GroupedStatement">Grouped Statement</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
+         title="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">Guided-Choice Placeholder</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
+         title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
    </li>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/OptionalStatement"
+         title="https://w3id.org/np/o/ntemplate/OptionalStatement">Optional Statement</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
    </li>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/ProvenanceTemplate"
@@ -100,7 +119,48 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/np/o/ntemplate/PubinfoTemplate" title="https://w3id.org/np/o/ntemplate/PubinfoTemplate">Publication Info Template</a>
    </li>
    <li>
+      <a href="#https://w3id.org/np/o/ntemplate/RepeatableStatement"
+         title="https://w3id.org/np/o/ntemplate/RepeatableStatement">Repeatable Statement</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder"
+         title="https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder">Restricted-Choice Placeholder</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+         title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+         <span>statement</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+         title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder"
+         title="https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder">Trusty URI Placeholder</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/np/o/ntemplate/UnlistedTemplate" title="https://w3id.org/np/o/ntemplate/UnlistedTemplate">Unlisted Template</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
+   </li>
+</ul><h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/hasStatement" title="https://w3id.org/np/o/ntemplate/hasStatement">has statement</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate"
+         title="https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate">was created from provenance template</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate"
+         title="https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate">was created from publication info template</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate"
+         title="https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate">was created from template</a>
    </li>
 </ul>
 </div>
@@ -119,10 +179,29 @@ This section provides details for each class and property defined by Nanopublica
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate" title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
+         <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate"
+            title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/GroupedStatement" title="https://w3id.org/np/o/ntemplate/GroupedStatement">Grouped Statement</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
+            title="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">Guided-Choice Placeholder</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
+            title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
       </li>
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/OptionalStatement"
+            title="https://w3id.org/np/o/ntemplate/OptionalStatement">Optional Statement</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
       </li>
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/ProvenanceTemplate"
@@ -132,7 +211,32 @@ This section provides details for each class and property defined by Nanopublica
          <a href="#https://w3id.org/np/o/ntemplate/PubinfoTemplate" title="https://w3id.org/np/o/ntemplate/PubinfoTemplate">Publication Info Template</a>
       </li>
       <li>
+         <a href="#https://w3id.org/np/o/ntemplate/RepeatableStatement"
+            title="https://w3id.org/np/o/ntemplate/RepeatableStatement">Repeatable Statement</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder"
+            title="https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder">Restricted-Choice Placeholder</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+            title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+            <span>statement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+            title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder"
+            title="https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder">Trusty URI Placeholder</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/np/o/ntemplate/UnlistedTemplate" title="https://w3id.org/np/o/ntemplate/UnlistedTemplate">Unlisted Template</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/AssertionTemplate">
@@ -157,6 +261,85 @@ This section provides details for each class and property defined by Nanopublica
             <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate"
+               title="https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate">was created from template</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/GroupedStatement">
+      <h3>Grouped Statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/GroupedStatement</p>
+      <div class="comment">
+         <span class="markdown">A statement that grouped and thereby includes several simple statements.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/GroupedStatement">https://w3id.org/np/o/ntemplate/latest/GroupedStatement</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+               title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">
+      <h3>Guided-Choice Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for any URI (of a possible restricted set) and that comes with API-supported guidance on finding suitable URIs.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder">https://w3id.org/np/o/ntemplate/latest/GuidedChoicePlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/np/o/ntemplate/URIPlaceholder">u r i placeholder</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">
+      <h3>Literal Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/LiteralPlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder">https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/NanopubTemplate">
@@ -178,11 +361,63 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate" title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
+            <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate"
+               title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/ProvenanceTemplate"
                title="https://w3id.org/np/o/ntemplate/ProvenanceTemplate">Provenance Template</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/PubinfoTemplate" title="https://w3id.org/np/o/ntemplate/PubinfoTemplate">Publication Info Template</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/UnlistedTemplate" title="https://w3id.org/np/o/ntemplate/UnlistedTemplate">Unlisted Template</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/OptionalStatement">
+      <h3>Optional Statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/OptionalStatement</p>
+      <div class="comment">
+         <span class="markdown">A statement that is optional.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/OptionalStatement">https://w3id.org/np/o/ntemplate/latest/OptionalStatement</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+               title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/Placeholder">
+      <h3>Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/Placeholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder corresponding to an input component like a text field in a template.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/Placeholder">https://w3id.org/np/o/ntemplate/latest/Placeholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
+               title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -209,6 +444,12 @@ This section provides details for each class and property defined by Nanopublica
             <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate"
+               title="https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate">was created from provenance template</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/PubinfoTemplate">
@@ -231,6 +472,136 @@ This section provides details for each class and property defined by Nanopublica
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate"
+               title="https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate">was created from publication info template</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/RepeatableStatement">
+      <h3>Repeatable Statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/RepeatableStatement</p>
+      <div class="comment">
+         <span class="markdown">A statement that can be repeated several times when the template is used.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/RepeatableStatement">https://w3id.org/np/o/ntemplate/latest/RepeatableStatement</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+               title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder">
+      <h3>Restricted-Choice Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for any URI of a pre-defined set of possible values.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder">https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/np/o/ntemplate/URIPlaceholder">u r i placeholder</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+      <h3>statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+               title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/TemplateStatement">
+      <h3>Template Statement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/TemplateStatement</p>
+      <div class="comment">
+         <span class="markdown">A statement (simple or grouped) that is part of a template.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/TemplateStatement">https://w3id.org/np/o/ntemplate/latest/TemplateStatement</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/GroupedStatement" title="https://w3id.org/np/o/ntemplate/GroupedStatement">Grouped Statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/OptionalStatement"
+               title="https://w3id.org/np/o/ntemplate/OptionalStatement">Optional Statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/RepeatableStatement"
+               title="https://w3id.org/np/o/ntemplate/RepeatableStatement">Repeatable Statement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+               title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">statement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/hasStatement" title="https://w3id.org/np/o/ntemplate/hasStatement">has statement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder">
+      <h3>Trusty URI Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for any trusty URI (of a possibly restricted set).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder">https://w3id.org/np/o/ntemplate/latest/TrustyUriPlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/np/o/ntemplate/URIPlaceholder">u r i placeholder</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -258,6 +629,171 @@ This section provides details for each class and property defined by Nanopublica
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/UriPlaceholder">
+      <h3>URI Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/UriPlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for any URI (of a possibly restricted set of URIs).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/UriPlaceholder">https://w3id.org/np/o/ntemplate/latest/UriPlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/hasStatement" title="https://w3id.org/np/o/ntemplate/hasStatement">has statement</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate"
+            title="https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate">was created from provenance template</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate"
+            title="https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate">was created from publication info template</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate"
+            title="https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate">was created from template</a>
+      </li>
+   </ul>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/hasStatement">
+      <h3>has statement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/hasStatement</p>
+      <div class="comment">
+         <span class="markdown">Connects an assertion template or a statement group within an assertion template to its included statements.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/hasStatement">https://w3id.org/np/o/ntemplate/latest/hasStatement</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/np/o/ntemplate/TemplateStatement"
+                  title="https://w3id.org/np/o/ntemplate/TemplateStatement">Template Statement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate">
+      <h3>was created from provenance template<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate</p>
+      <div class="comment">
+         <span class="markdown">Denotes that a nanopublication was created from the given provenance template.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate">https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/np/o/ntemplate/ProvenanceTemplate"
+                  title="https://w3id.org/np/o/ntemplate/ProvenanceTemplate">Provenance Template</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate">
+      <h3>was created from publication info template<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate</p>
+      <div class="comment">
+         <span class="markdown">Denotes that a nanopublication was created from the given publication info template.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate">https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/np/o/ntemplate/PubinfoTemplate" title="https://w3id.org/np/o/ntemplate/PubinfoTemplate">Publication Info Template</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate">
+      <h3>was created from template<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate</p>
+      <div class="comment">
+         <span class="markdown">Denotes that a nanopublication was created from the given assertion template.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate">https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.nanopub.org/nschema#Nanopublication">nanopublication</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/np/o/ntemplate/AssertionTemplate"
+                  title="https://w3id.org/np/o/ntemplate/AssertionTemplate">Assertion Template</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
