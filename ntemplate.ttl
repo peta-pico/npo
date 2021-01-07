@@ -127,41 +127,41 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/LocalResource>;
   <http://www.w3.org/2004/02/skos/core#definition> "A resource in a template that represents a thing that is introduced (i.e. is referenced with 'npx:introduces' in the publication info of the nanopublications created from the template)."@en .
 
-<https://w3id.org/np/o/ntemplate/hasStatement> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/hasStatement> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasStatement>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has statement"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/TemplateStatement>;
   <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
 
-<https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/wasCreatedFromTemplate> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate>;
   <http://www.w3.org/2000/01/rdf-schema#label> "was created from template"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
   <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given assertion template."@en .
 
-<https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/wasCreatedFromProvenanceTemplate> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate>;
   <http://www.w3.org/2000/01/rdf-schema#label> "was created from provenance template"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/ProvenanceTemplate>;
   <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given provenance template."@en .
 
-<https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/wasCreatedFromPubinfoTemplate> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.nanopub.org/nschema#Nanopublication>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate>;
   <http://www.w3.org/2000/01/rdf-schema#label> "was created from publication info template"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/PubinfoTemplate>;
   <http://www.w3.org/2004/02/skos/core#definition> "Denotes that a nanopublication was created from the given publication info template."@en .
 
-<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/hasDefaultProvenance> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasDefaultProvenance>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has default provenance"@en;
   <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/ProvenanceTemplate>;
   <http://www.w3.org/2004/02/skos/core#definition> "Indicates the default provenance template for a given assertion template."@en .
 
-<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/hasRequiredPubinfoElement> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasRequiredPubinfoElement>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has required publication info element"@en;
@@ -174,13 +174,13 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#label> "statement order"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "Specifies an integer value that defines the order in which statements appear."@en .
 
-<https://w3id.org/np/o/ntemplate/possibleValue> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/possibleValue> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/UriPlaceholder>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValue>;
   <http://www.w3.org/2000/01/rdf-schema#label> "possible value"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en .
 
-<https://w3id.org/np/o/ntemplate/possibleValuesFrom> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+<https://w3id.org/np/o/ntemplate/possibleValuesFrom> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/UriPlaceholder>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValuesFrom>;
   <http://www.w3.org/2000/01/rdf-schema#label> "possible values from"@en;

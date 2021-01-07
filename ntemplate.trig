@@ -640,14 +640,14 @@ sub:pubinfo {
 
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/LocalResource/RAVnA-cV6M7yZGuY93-6MzBxmdKbhpLylwtLz80ZMi2Co> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/LocalResource/RAVnA-cV6M7yZGuY93-6MzBxmdKbhpLylwtLz80ZMi2Co#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/LocalResource/RAC6APaiR21ZqQW-HNjhUg877xjEd5Ug--8Y4XTckt8Lk> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/LocalResource/RAC6APaiR21ZqQW-HNjhUg877xjEd5Ug--8Y4XTckt8Lk#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/LocalResource> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -672,13 +672,13 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-07T13:12:11.802+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:LocalResource .
 }
-@prefix this: <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RA8Wh8NjL0zHNbw9aft72kie0hP8InOL0FKaa3oP-ezBE> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RA8Wh8NjL0zHNbw9aft72kie0hP8InOL0FKaa3oP-ezBE#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RAbivRb6kOJc-rcmqK8i6Y121x_LLIz62Myjp499cAxvI> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RAbivRb6kOJc-rcmqK8i6Y121x_LLIz62Myjp499cAxvI#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/IntroducedResource> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -708,22 +708,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-07T13:12:11.802+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:IntroducedResource;
     npx:supersedes <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RArgCZ647xiRCt4U3JFaIT0B_fE20G97Tj7KAqn0ctbG0> .
 }
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/hasStatement/RAGrTc5QNX3cBOb2rAMdtpR3nxOrmB-4Jtz2luOopfUPU> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/hasStatement/RAGrTc5QNX3cBOb2rAMdtpR3nxOrmB-4Jtz2luOopfUPU#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/hasStatement/RAjrBYBZ7WnkptAr1veRSf1MxEjmD2eMxvmtxkhwY7dv4> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/hasStatement/RAjrBYBZ7WnkptAr1veRSf1MxEjmD2eMxvmtxkhwY7dv4#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/hasStatement> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -737,7 +735,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:hasStatement a rdf:Property;
+  nt:hasStatement a owl:ObjectProperty;
     rdfs:isDefinedBy latest:;
     rdfs:label "has statement"@en;
     rdfs:range nt:TemplateStatement;
@@ -749,22 +747,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:hasStatement .
+    npx:introduces nt:hasStatement;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/hasStatement/RAGrTc5QNX3cBOb2rAMdtpR3nxOrmB-4Jtz2luOopfUPU> .
 }
-
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAdUFy6AWg--LfUeRxDYPXq3A8Zr6AN_gJ3vxSRQPenvo> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAdUFy6AWg--LfUeRxDYPXq3A8Zr6AN_gJ3vxSRQPenvo#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAzgJVmiaWIYVAfZdfgUdxB-N47ZsNcre1SB2n1xOkzyA> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAzgJVmiaWIYVAfZdfgUdxB-N47ZsNcre1SB2n1xOkzyA#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromTemplate> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -778,7 +774,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:wasCreatedFromTemplate a rdf:Property;
+  nt:wasCreatedFromTemplate a owl:ObjectProperty;
     rdfs:domain np:Nanopublication;
     rdfs:isDefinedBy latest:;
     rdfs:label "was created from template"@en;
@@ -791,22 +787,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:wasCreatedFromTemplate .
+    npx:introduces nt:wasCreatedFromTemplate;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAdUFy6AWg--LfUeRxDYPXq3A8Zr6AN_gJ3vxSRQPenvo> .
 }
-
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAkxgvZ_gEBXx0TveQjjDUeeTueQ86mI6Y6p_-oEzsMX4> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAkxgvZ_gEBXx0TveQjjDUeeTueQ86mI6Y6p_-oEzsMX4#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAM1N-B3eAbr_k2UwA9w_HVnOx_x7KtJdjOwWuSPCFHR8> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAM1N-B3eAbr_k2UwA9w_HVnOx_x7KtJdjOwWuSPCFHR8#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromProvenanceTemplate> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -820,7 +814,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:wasCreatedFromProvenanceTemplate a rdf:Property;
+  nt:wasCreatedFromProvenanceTemplate a owl:ObjectProperty;
     rdfs:domain np:Nanopublication;
     rdfs:isDefinedBy latest:;
     rdfs:label "was created from provenance template"@en;
@@ -833,22 +827,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:wasCreatedFromProvenanceTemplate .
+    npx:introduces nt:wasCreatedFromProvenanceTemplate;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAkxgvZ_gEBXx0TveQjjDUeeTueQ86mI6Y6p_-oEzsMX4> .
 }
-
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAPJsHq5XZ7u2jh7dtvp3wEfxgJY1ZvN5VpDQH8y8G2OA> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAPJsHq5XZ7u2jh7dtvp3wEfxgJY1ZvN5VpDQH8y8G2OA#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAtc0LybVYwdbuDPILfKOuEYOr1Lr65eZS-IZ59QtBGiM> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAtc0LybVYwdbuDPILfKOuEYOr1Lr65eZS-IZ59QtBGiM#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/wasCreatedFromPubinfoTemplate> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -862,7 +854,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:wasCreatedFromPubinfoTemplate a rdf:Property;
+  nt:wasCreatedFromPubinfoTemplate a owl:ObjectProperty;
     rdfs:domain np:Nanopublication;
     rdfs:isDefinedBy latest:;
     rdfs:label "was created from publication info template"@en;
@@ -875,22 +867,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:wasCreatedFromPubinfoTemplate .
+    npx:introduces nt:wasCreatedFromPubinfoTemplate;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAPJsHq5XZ7u2jh7dtvp3wEfxgJY1ZvN5VpDQH8y8G2OA> .
 }
-
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA3HYb1W5C98ygcWHQiM6eW7EHLuDZPSlheMihJlXIen0> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA3HYb1W5C98ygcWHQiM6eW7EHLuDZPSlheMihJlXIen0#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA2b6R1V-B0uuNcSbsDrU5-CSkj5jyoqBbUuBj6UWIKXo> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA2b6R1V-B0uuNcSbsDrU5-CSkj5jyoqBbUuBj6UWIKXo#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/hasDefaultProvenance> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -904,7 +894,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:hasDefaultProvenance a rdf:Property;
+  nt:hasDefaultProvenance a owl:ObjectProperty;
     rdfs:domain nt:AssertionTemplate;
     rdfs:isDefinedBy latest:;
     rdfs:label "has default provenance"@en;
@@ -917,22 +907,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:hasDefaultProvenance .
+    npx:introduces nt:hasDefaultProvenance;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA3HYb1W5C98ygcWHQiM6eW7EHLuDZPSlheMihJlXIen0> .
 }
-
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPFpsWqhjDl9UVPRcH5mXacYIGEEpkviWNXnD4bD4fjA> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPFpsWqhjDl9UVPRcH5mXacYIGEEpkviWNXnD4bD4fjA#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPibKwfB3Mk6bwrhbHUGe5CI60nMjRT3g1A0aLNYSgPM> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPibKwfB3Mk6bwrhbHUGe5CI60nMjRT3g1A0aLNYSgPM#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/hasRequiredPubinfoElement> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -946,7 +934,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:hasRequiredPubinfoElement a rdf:Property;
+  nt:hasRequiredPubinfoElement a owl:ObjectProperty;
     rdfs:domain nt:AssertionTemplate;
     rdfs:isDefinedBy latest:;
     rdfs:label "has required publication info element"@en;
@@ -959,12 +947,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:hasRequiredPubinfoElement .
+    npx:introduces nt:hasRequiredPubinfoElement;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPFpsWqhjDl9UVPRcH5mXacYIGEEpkviWNXnD4bD4fjA> .
 }
-
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/statementOrder/RA6XFAVjibs7OAD2exK4N09WtkEQuF87Lc0jfmOLhOEng> .
@@ -1006,16 +994,14 @@ sub:pubinfo {
     npx:introduces nt:statementOrder .
 }
 
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValue/RAVgc5plAvaT5Mg0mY3gzPpPcusRdaBfGlB6hKqGBeTc8> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/possibleValue/RAVgc5plAvaT5Mg0mY3gzPpPcusRdaBfGlB6hKqGBeTc8#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValue/RA9R_Hl_MiEDT3Y6p7_RrnOSgNDpgBPUAlNlqNTPe_xHM> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/possibleValue/RA9R_Hl_MiEDT3Y6p7_RrnOSgNDpgBPUAlNlqNTPe_xHM#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/possibleValue> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -1029,7 +1015,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:possibleValue a rdf:Property;
+  nt:possibleValue a owl:ObjectProperty;
     rdfs:domain nt:UriPlaceholder;
     rdfs:isDefinedBy latest:;
     rdfs:label "possible value"@en;
@@ -1041,22 +1027,20 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:possibleValue .
+    npx:introduces nt:possibleValue;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/possibleValue/RAVgc5plAvaT5Mg0mY3gzPpPcusRdaBfGlB6hKqGBeTc8> .
 }
-
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RA35OeWl1NN7RAdEiSpGMGb5t7Rdjq_i5suS7SnP8v-fI> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RA35OeWl1NN7RAdEiSpGMGb5t7Rdjq_i5suS7SnP8v-fI#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RArXbw8jf_cgNyNJC5FDt0ilH7aOuVtAwOMc_wC_jNxjw> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RArXbw8jf_cgNyNJC5FDt0ilH7aOuVtAwOMc_wC_jNxjw#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/possibleValuesFrom> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -1070,7 +1054,7 @@ sub:Head {
 }
 
 sub:assertion {
-  nt:possibleValuesFrom a rdf:Property;
+  nt:possibleValuesFrom a owl:ObjectProperty;
     rdfs:domain nt:UriPlaceholder;
     rdfs:isDefinedBy latest:;
     rdfs:label "possible values from"@en;
@@ -1083,12 +1067,12 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:possibleValuesFrom .
+    npx:introduces nt:possibleValuesFrom;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RA35OeWl1NN7RAdEiSpGMGb5t7Rdjq_i5suS7SnP8v-fI> .
 }
-
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValuesFromApi/RAjcqqQz8NqveRj09tD0Ul43Mqkn4C71UBzRhPSVxCLZU> .
@@ -1253,14 +1237,14 @@ sub:pubinfo {
     npx:introduces nt:hasRegex .
 }
 
-@prefix this: <https://w3id.org/np/o/ntemplate/np/CREATOR/RAYfg1ShyUdFguD3IY7c1_W-3yHKKZoK9SGI7Z5Z670lc> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/CREATOR/RAYfg1ShyUdFguD3IY7c1_W-3yHKKZoK9SGI7Z5Z670lc#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/CREATOR/RA7g_DeuLC7cl-FUJYvnx7yt2kfqNDJqEcnYkNO_KYIUM> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/CREATOR/RA7g_DeuLC7cl-FUJYvnx7yt2kfqNDJqEcnYkNO_KYIUM#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/CREATOR> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -1285,7 +1269,7 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-07T13:12:11.802+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:CREATOR;
@@ -1293,14 +1277,14 @@ sub:pubinfo {
 }
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/ASSERTION/RAkYPIA2gYOCmD3c72Ihjk1ivplmTKJZiTVEU2XcqJlH8> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/ASSERTION/RAkYPIA2gYOCmD3c72Ihjk1ivplmTKJZiTVEU2XcqJlH8#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/ASSERTION/RAvtMqVw2r6tAYZShJwdI-ix4XpIiFhKB9m3m0BUXp6RU> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/ASSERTION/RAvtMqVw2r6tAYZShJwdI-ix4XpIiFhKB9m3m0BUXp6RU#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/ASSERTION> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -1325,21 +1309,21 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-07T13:12:11.802+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:ASSERTION .
 }
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix this: <https://w3id.org/np/o/ntemplate/np/NANOPUB/RAWr53aa9XHmCUkeLvkNDcrgAU11K3TXzL-Or0PPs4HSo> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/NANOPUB/RAWr53aa9XHmCUkeLvkNDcrgAU11K3TXzL-Or0PPs4HSo#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/NANOPUB/RAjBYhmAYnZcJNdq4BRFGG6TPUSKAsYriS0_xf8L8q8ao> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/NANOPUB/RAjBYhmAYnZcJNdq4BRFGG6TPUSKAsYriS0_xf8L8q8ao#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/NANOPUB> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix orcid: <https://orcid.org/> .
@@ -1364,7 +1348,7 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2021-01-07T13:12:11.802+01:00"^^xsd:dateTime;
+  this: dct:created "2021-01-07T13:47:19.227+01:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:NANOPUB .
