@@ -46,7 +46,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "This placeholder instance stands for the assertion of the nanopublication to be created."
+    "@value" : "This is a template reference to the assertion of the nanopublication to be created."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate",
@@ -77,7 +77,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "This placeholder instance stands for the creator of the nanopublication."
+    "@value" : "This is a template reference to the creator of the nanopublication."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/GroupedStatement",
@@ -123,6 +123,9 @@
     "@language" : "en",
     "@value" : "Introduced Resource"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/LocalResource"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A resource in a template that represents a thing that is introduced (i.e. is referenced with 'npx:introduces' in the publication info of the nanopublications created from the template)."
@@ -145,6 +148,20 @@
     "@value" : "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."
   } ]
 }, {
+  "@id" : "https://w3id.org/np/o/ntemplate/LocalResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/LocalResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Local Resource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A resource in a template that represents a local identifier to be minted."
+  } ]
+}, {
   "@id" : "https://w3id.org/np/o/ntemplate/NANOPUB",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -156,7 +173,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "This placeholder instance stands for the nanopublication to be created."
+    "@value" : "This is a template reference to the nanopublication to be created."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate",
