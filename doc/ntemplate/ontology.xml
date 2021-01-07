@@ -346,6 +346,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/IntroducedResource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/LocalResource"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/IntroducedResource"/>
         <rdfs:label xml:lang="en">Introduced Resource</rdfs:label>
         <skos:definition xml:lang="en">A resource in a template that represents a thing that is introduced (i.e. is referenced with &apos;npx:introduces&apos; in the publication info of the nanopublications created from the template).</skos:definition>
@@ -361,6 +362,17 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder"/>
         <rdfs:label xml:lang="en">Literal Placeholder</rdfs:label>
         <skos:definition xml:lang="en">A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/LocalResource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/LocalResource">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/LocalResource"/>
+        <rdfs:label xml:lang="en">Local Resource</rdfs:label>
+        <skos:definition xml:lang="en">A resource in a template that represents a local identifier to be minted.</skos:definition>
     </owl:Class>
     
 
@@ -512,7 +524,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/np/o/ntemplate/ASSERTION">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/ASSERTION"/>
         <rdfs:label xml:lang="en">ASSERTION</rdfs:label>
-        <skos:definition xml:lang="en">This placeholder instance stands for the assertion of the nanopublication to be created.</skos:definition>
+        <skos:definition xml:lang="en">This is a template reference to the assertion of the nanopublication to be created.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -523,7 +535,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/np/o/ntemplate/CREATOR">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/CREATOR"/>
         <rdfs:label xml:lang="en">CREATOR</rdfs:label>
-        <skos:definition xml:lang="en">This placeholder instance stands for the creator of the nanopublication.</skos:definition>
+        <skos:definition xml:lang="en">This is a template reference to the creator of the nanopublication.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -534,7 +546,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/np/o/ntemplate/NANOPUB">
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/NANOPUB"/>
         <rdfs:label xml:lang="en">NANOPUB</rdfs:label>
-        <skos:definition xml:lang="en">This placeholder instance stands for the nanopublication to be created.</skos:definition>
+        <skos:definition xml:lang="en">This is a template reference to the nanopublication to be created.</skos:definition>
     </owl:NamedIndividual>
 </rdf:RDF>
 

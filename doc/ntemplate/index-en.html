@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Thu Jan 07 11:20:50 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Thu Jan 07 13:12:17 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -104,6 +104,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
          title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/LocalResource" title="https://w3id.org/np/o/ntemplate/LocalResource">Local Resource</a>
    </li>
    <li>
       <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
@@ -242,6 +245,9 @@ This section provides details for each class and property defined by Nanopublica
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
             title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/LocalResource" title="https://w3id.org/np/o/ntemplate/LocalResource">Local Resource</a>
       </li>
       <li>
          <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
@@ -401,6 +407,13 @@ This section provides details for each class and property defined by Nanopublica
             <a href="https://w3id.org/np/o/ntemplate/latest/IntroducedResource">https://w3id.org/np/o/ntemplate/latest/IntroducedResource</a>
          </dd>
       </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/LocalResource" title="https://w3id.org/np/o/ntemplate/LocalResource">Local Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">
       <h3>Literal Placeholder<sup class="type-c" title="class">c</sup>
@@ -422,6 +435,31 @@ This section provides details for each class and property defined by Nanopublica
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/LocalResource">
+      <h3>Local Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/LocalResource</p>
+      <div class="comment">
+         <span class="markdown">A resource in a template that represents a local identifier to be minted.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/LocalResource">https://w3id.org/np/o/ntemplate/latest/LocalResource</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/IntroducedResource"
+               title="https://w3id.org/np/o/ntemplate/IntroducedResource">Introduced Resource</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1217,7 +1255,7 @@ This section provides details for each class and property defined by Nanopublica
       <p>
          <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/ASSERTION</p>
       <div class="comment">
-         <span class="markdown">This placeholder instance stands for the assertion of the nanopublication to be created.</span>
+         <span class="markdown">This is a template reference to the assertion of the nanopublication to be created.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1234,7 +1272,7 @@ This section provides details for each class and property defined by Nanopublica
       <p>
          <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/CREATOR</p>
       <div class="comment">
-         <span class="markdown">This placeholder instance stands for the creator of the nanopublication.</span>
+         <span class="markdown">This is a template reference to the creator of the nanopublication.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1251,7 +1289,7 @@ This section provides details for each class and property defined by Nanopublica
       <p>
          <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/NANOPUB</p>
       <div class="comment">
-         <span class="markdown">This placeholder instance stands for the nanopublication to be created.</span>
+         <span class="markdown">This is a template reference to the nanopublication to be created.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
