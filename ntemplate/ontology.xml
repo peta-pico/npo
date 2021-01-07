@@ -8,8 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:ntemplate="https://w3id.org/np/o/ntemplate/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/np/o/ntemplate/NanopubTemplateOntology">
         <terms:creator rdf:resource="https://orcid.org/0000-0002-1267-0234"/>
         <terms:description>This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.</terms:description>
@@ -83,18 +82,6 @@
     
 
 
-    <!-- https://w3id.org/np/o/ntemplate/possibleValue -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/np/o/ntemplate/possibleValue">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/possibleValue"/>
-        <rdfs:label xml:lang="en">possible value</rdfs:label>
-        <skos:definition xml:lang="en">Indicates a possible value for a restricted-choice or guided-choice placeholder.</skos:definition>
-        <rdfs:domain rdf:resource="https://w3id.org/np/o/ntemplate/UriPlaceholder"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -148,6 +135,18 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/hasStatement"/>
         <rdfs:label xml:lang="en">has statement</rdfs:label>
         <skos:definition xml:lang="en">Connects an assertion template or a statement group within an assertion template to its included statements.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/possibleValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/possibleValue">
+        <rdfs:domain rdf:resource="https://w3id.org/np/o/ntemplate/UriPlaceholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/possibleValue"/>
+        <rdfs:label xml:lang="en">possible value</rdfs:label>
+        <skos:definition xml:lang="en">Indicates a possible value for a restricted-choice or guided-choice placeholder.</skos:definition>
     </owl:ObjectProperty>
     
 

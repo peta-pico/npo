@@ -47,14 +47,6 @@
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/np/o/ntemplate/possibleValue
-<https://w3id.org/np/o/ntemplate/possibleValue> rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/possibleValue> ;
-                                                rdfs:label "possible value"@en ;
-                                                <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en ;
-                                                rdf:type owl:AnnotationProperty ;
-                                                rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
-
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -87,6 +79,14 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
                                                rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasStatement> ;
                                                rdfs:label "has statement"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/possibleValue
+<https://w3id.org/np/o/ntemplate/possibleValue> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
+                                                rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/possibleValue> ;
+                                                rdfs:label "possible value"@en ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en .
 
 
 ###  https://w3id.org/np/o/ntemplate/possibleValuesFrom

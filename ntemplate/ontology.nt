@@ -36,13 +36,6 @@
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://w3id.org/np/o/ntemplate/possibleValue
-<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValue> .
-<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#label> "possible value"@en .
-<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en .
-<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
-# 
 # 
 # 
 # #################################################################
@@ -81,10 +74,17 @@
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2000/01/rdf-schema#label> "has statement"@en .
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
 # 
+# https://w3id.org/np/o/ntemplate/possibleValue
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
+<https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValue> .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#label> "possible value"@en .
+<https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2004/02/skos/core#definition> "Indicates a possible value for a restricted-choice or guided-choice placeholder."@en .
+# 
 # https://w3id.org/np/o/ntemplate/possibleValuesFrom
 <https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
-<https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.nanopub.org/nschema#Nanopublication> .
 <http://www.nanopub.org/nschema#Nanopublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/possibleValuesFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValuesFrom> .
