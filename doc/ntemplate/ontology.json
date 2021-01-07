@@ -35,6 +35,20 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/np/o/ntemplate/ASSERTION",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/ASSERTION"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ASSERTION"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "This placeholder instance stands for the assertion of the nanopublication to be created."
+  } ]
+}, {
   "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -129,6 +143,20 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/NANOPUB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/NANOPUB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NANOPUB"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "This placeholder instance stands for the nanopublication to be created."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate",

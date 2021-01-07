@@ -42,7 +42,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplateOntology .
@@ -84,7 +84,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:NanopubTemplate .
@@ -124,7 +124,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:AssertionTemplate .
@@ -164,7 +164,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:ProvenanceTemplate .
@@ -204,7 +204,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:PubinfoTemplate .
@@ -244,7 +244,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:UnlistedTemplate .
@@ -285,7 +285,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:TemplateStatement .
@@ -325,7 +325,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:OptionalStatement .
@@ -365,7 +365,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:GroupedStatement .
@@ -405,7 +405,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:RepeatableStatement .
@@ -445,7 +445,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:Placeholder .
@@ -485,7 +485,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:UriPlaceholder .
@@ -525,7 +525,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:TrustyUriPlaceholder .
@@ -565,7 +565,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:RestrictedChoicePlaceholder .
@@ -605,7 +605,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:GuidedChoicePlaceholder .
@@ -645,7 +645,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:LiteralPlaceholder .
@@ -685,7 +685,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:IntroducedResource .
@@ -728,7 +728,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasStatement .
@@ -770,7 +770,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:wasCreatedFromTemplate .
@@ -812,7 +812,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:wasCreatedFromProvenanceTemplate .
@@ -854,7 +854,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:wasCreatedFromPubinfoTemplate .
@@ -896,7 +896,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasDefaultProvenance .
@@ -938,7 +938,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasRequiredPubinfoElement .
@@ -979,7 +979,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:statementOrder .
@@ -1020,7 +1020,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:possibleValue .
@@ -1062,7 +1062,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:possibleValuesFrom .
@@ -1103,7 +1103,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:possibleValuesFromApi .
@@ -1144,7 +1144,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasPrefix .
@@ -1185,7 +1185,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasPrefixLabel .
@@ -1226,7 +1226,7 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:hasRegex .
@@ -1268,9 +1268,89 @@
 }
 
 :pubinfo {
-  : dct:created "2021-01-05T13:19:31.524+01:00"^^xsd:dateTime ;
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     npx:introduces nt:CREATOR .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/ASSERTION/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/ASSERTION> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:ASSERTION rdfs:label "ASSERTION"@en ;
+    a owl:NamedIndividual ;
+    skos:definition "This placeholder instance stands for the assertion of the nanopublication to be created."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:ASSERTION .
+}
+
+
+@prefix : <https://w3id.org/np/o/ntemplate/np/NANOPUB/> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/NANOPUB> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  nt:NANOPUB rdfs:label "NANOPUB"@en ;
+    a owl:NamedIndividual ;
+    skos:definition "This placeholder instance stands for the nanopublication to be created."@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    npx:introduces nt:NANOPUB .
 }
 

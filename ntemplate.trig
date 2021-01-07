@@ -78,6 +78,9 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:NanopubTemplate .
 }
+
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAqh4nOi8AVLCuP821wuK5UQobj89hEihnoYj5H5VbvFo> .
 @prefix sub: <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAqh4nOi8AVLCuP821wuK5UQobj89hEihnoYj5H5VbvFo#> .
 @prefix latest: <https://w3id.org/np/o/ntemplate/latest/AssertionTemplate> .
@@ -115,6 +118,7 @@ sub:pubinfo {
     npx:introduces nt:AssertionTemplate;
     npx:supersedes <https://w3id.org/np/o/ntemplate/np/AssertionTemplate/RAgnTswSJVbteT-6nqKlPqk-cpPjG6z-slHpxh4r5R6uA> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/ProvenanceTemplate/RAkAt4ve_0_cTgGzzvtpsEtYQsd_iaS5QO8UvejuhO600> .
@@ -153,6 +157,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:ProvenanceTemplate .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/PubinfoTemplate/RAhorFmHJgVhL8DA0WnAlNybYZX3FQWsnqPu-rnaLbD6U> .
@@ -191,6 +196,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:PubinfoTemplate .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/UnlistedTemplate/RAJegT9vVXJ2dJdV4cbXzQy3Is-5cVpjctmYpLzeSeYXg> .
@@ -229,6 +235,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:UnlistedTemplate .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/TemplateStatement/RAXvDRO8jbZgAVr5F1q8EWsYSVPqpXRB92V9eLtOZuYqQ> .
 @prefix sub: <https://w3id.org/np/o/ntemplate/np/TemplateStatement/RAXvDRO8jbZgAVr5F1q8EWsYSVPqpXRB92V9eLtOZuYqQ#> .
@@ -270,6 +277,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:TemplateStatement .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -309,6 +317,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:OptionalStatement .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -348,6 +357,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:GroupedStatement .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -387,6 +397,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:RepeatableStatement .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/Placeholder/RAopmK-Lzq8ZuzzKBJKc8P7im99U6hz7p3hJaUnD64lj4> .
@@ -426,6 +437,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:Placeholder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -465,6 +477,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:UriPlaceholder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -504,6 +517,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:TrustyUriPlaceholder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -543,6 +557,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:RestrictedChoicePlaceholder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -582,6 +597,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:GuidedChoicePlaceholder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -621,6 +637,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:LiteralPlaceholder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/IntroducedResource/RArgCZ647xiRCt4U3JFaIT0B_fE20G97Tj7KAqn0ctbG0> .
@@ -660,6 +677,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:IntroducedResource .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/hasStatement/RAGrTc5QNX3cBOb2rAMdtpR3nxOrmB-4Jtz2luOopfUPU> .
@@ -700,6 +718,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:hasStatement .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromTemplate/RAdUFy6AWg--LfUeRxDYPXq3A8Zr6AN_gJ3vxSRQPenvo> .
@@ -741,6 +760,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:wasCreatedFromTemplate .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromProvenanceTemplate/RAkxgvZ_gEBXx0TveQjjDUeeTueQ86mI6Y6p_-oEzsMX4> .
@@ -782,6 +802,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:wasCreatedFromProvenanceTemplate .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/wasCreatedFromPubinfoTemplate/RAPJsHq5XZ7u2jh7dtvp3wEfxgJY1ZvN5VpDQH8y8G2OA> .
@@ -823,6 +844,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:wasCreatedFromPubinfoTemplate .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/hasDefaultProvenance/RA3HYb1W5C98ygcWHQiM6eW7EHLuDZPSlheMihJlXIen0> .
@@ -864,6 +886,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:hasDefaultProvenance .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/hasRequiredPubinfoElement/RAPFpsWqhjDl9UVPRcH5mXacYIGEEpkviWNXnD4bD4fjA> .
@@ -905,6 +928,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:hasRequiredPubinfoElement .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/statementOrder/RA6XFAVjibs7OAD2exK4N09WtkEQuF87Lc0jfmOLhOEng> .
@@ -945,6 +969,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:statementOrder .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValue/RAVgc5plAvaT5Mg0mY3gzPpPcusRdaBfGlB6hKqGBeTc8> .
@@ -985,6 +1010,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:possibleValue .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValuesFrom/RA35OeWl1NN7RAdEiSpGMGb5t7Rdjq_i5suS7SnP8v-fI> .
@@ -1026,6 +1052,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:possibleValuesFrom .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/possibleValuesFromApi/RAjcqqQz8NqveRj09tD0Ul43Mqkn4C71UBzRhPSVxCLZU> .
@@ -1066,6 +1093,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:possibleValuesFromApi .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/hasPrefix/RAibNVFKKyet8qwmRikenbWE0KdIkNJwgFBfNDMei-0Tg> .
@@ -1106,6 +1134,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:hasPrefix .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/hasPrefixLabel/RAgoZ4S2nsN9YOJ-ps1Z6orJsmj-4SfjFRhT-yaVBNHFs> .
@@ -1146,6 +1175,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:hasPrefixLabel .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/hasRegex/RALtixrfHOhMZ-lhQ0OYqzb1fP9n7mfADEe10hF-9dXtk> .
@@ -1186,6 +1216,7 @@ sub:pubinfo {
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:hasRegex .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix this: <https://w3id.org/np/o/ntemplate/np/CREATOR/RAgeeQx24D9dPyylWJQjNHDPXTRndZ3b8koPRB48eDCGg> .
@@ -1224,4 +1255,83 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
     npx:introduces nt:CREATOR .
+}
+
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/ASSERTION/RAPVQz6Y3sREc8MTaOmaw7wkfLJHTUoB9Odn7PcuvMnP4> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/ASSERTION/RAPVQz6Y3sREc8MTaOmaw7wkfLJHTUoB9Odn7PcuvMnP4#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/ASSERTION> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:ASSERTION a owl:NamedIndividual;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "ASSERTION"@en;
+    skos:definition "This placeholder instance stands for the assertion of the nanopublication to be created."@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:introduces nt:ASSERTION .
+}
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/NANOPUB/RA-YddasKC668Lvx3eIhi3_v4hEKC7G6rCI9D7JkYlqTw> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/NANOPUB/RA-YddasKC668Lvx3eIhi3_v4hEKC7G6rCI9D7JkYlqTw#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix latest: <https://w3id.org/np/o/ntemplate/latest/NANOPUB> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  nt:NANOPUB a owl:NamedIndividual;
+    rdfs:isDefinedBy latest:;
+    rdfs:label "NANOPUB"@en;
+    skos:definition "This placeholder instance stands for the nanopublication to be created."@en .
+}
+
+sub:provenance {
+  sub:assertion dct:creator orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2021-01-07T11:20:44.446+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:introduces nt:NANOPUB .
 }

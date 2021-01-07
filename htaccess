@@ -43,5 +43,7 @@ RewriteRule ^ntemplate/latest/hasPrefix$ http://purl.org/np/RAibNVFKKyet8qwmRike
 RewriteRule ^ntemplate/latest/hasPrefixLabel$ http://purl.org/np/RAgoZ4S2nsN9YOJ-ps1Z6orJsmj-4SfjFRhT-yaVBNHFs [R=302,L]
 RewriteRule ^ntemplate/latest/hasRegex$ http://purl.org/np/RALtixrfHOhMZ-lhQ0OYqzb1fP9n7mfADEe10hF-9dXtk [R=302,L]
 RewriteRule ^ntemplate/latest/CREATOR$ http://purl.org/np/RAgeeQx24D9dPyylWJQjNHDPXTRndZ3b8koPRB48eDCGg [R=302,L]
+RewriteRule ^ntemplate/latest/ASSERTION$ http://purl.org/np/RAPVQz6Y3sREc8MTaOmaw7wkfLJHTUoB9Odn7PcuvMnP4 [R=302,L]
+RewriteRule ^ntemplate/latest/NANOPUB$ http://purl.org/np/RA-YddasKC668Lvx3eIhi3_v4hEKC7G6rCI9D7JkYlqTw [R=302,L]
 
-RewriteRule ^ntemplate/latest/index$ http://purl.org/np/RAcbOAzTcHcCWAVqNKdzxT_D5PghWhFwkp0YVYlSS5olY [R=302,L]
+RewriteRule ^ntemplate/latest/index$ http://purl.org/np/RAknrMqM57UCjX2QnDV8xhgr1th9JzWhXvv2Cm20nqiaY [R=302,L]
