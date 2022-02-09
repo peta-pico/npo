@@ -153,6 +153,14 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
                                            <http://www.w3.org/2004/02/skos/core#definition> "Specifies a regular expression pattern restricting the possible values for the given placeholder."@en .
 
 
+###  https://w3id.org/np/o/ntemplate/hasTag
+<https://w3id.org/np/o/ntemplate/hasTag> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://w3id.org/np/o/ntemplate/NanopubTemplate> ;
+                                         rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasTag> ;
+                                         rdfs:label "has tag"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "Specifies a tag string that is used to group the templates in a user interface."@en .
+
+
 ###  https://w3id.org/np/o/ntemplate/possibleValuesFromApi
 <https://w3id.org/np/o/ntemplate/possibleValuesFromApi> rdf:type owl:DatatypeProperty ;
                                                         rdfs:domain <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> ;

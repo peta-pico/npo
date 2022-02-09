@@ -145,6 +145,13 @@
 <https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/2000/01/rdf-schema#label> "has regular expression"@en .
 <https://w3id.org/np/o/ntemplate/hasRegex> <http://www.w3.org/2004/02/skos/core#definition> "Specifies a regular expression pattern restricting the possible values for the given placeholder."@en .
 # 
+# https://w3id.org/np/o/ntemplate/hasTag
+<https://w3id.org/np/o/ntemplate/hasTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/hasTag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/NanopubTemplate> .
+<https://w3id.org/np/o/ntemplate/hasTag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasTag> .
+<https://w3id.org/np/o/ntemplate/hasTag> <http://www.w3.org/2000/01/rdf-schema#label> "has tag"@en .
+<https://w3id.org/np/o/ntemplate/hasTag> <http://www.w3.org/2004/02/skos/core#definition> "Specifies a tag string that is used to group the templates in a user interface."@en .
+# 
 # https://w3id.org/np/o/ntemplate/possibleValuesFromApi
 <https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/np/o/ntemplate/possibleValuesFromApi> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder> .

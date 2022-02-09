@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Thu Jan 07 13:47:24 CET 2021", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Wed Feb 09 16:57:29 CET 2022", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -196,6 +196,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/hasRegex" title="https://w3id.org/np/o/ntemplate/hasRegex">has regular expression</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/hasTag" title="https://w3id.org/np/o/ntemplate/hasTag">has tag</a>
    </li>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/possibleValuesFromApi"
@@ -522,7 +525,8 @@ This section provides details for each class and property defined by Nanopublica
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/statementOrder" title="https://w3id.org/np/o/ntemplate/statementOrder">statement order</a>
+            <a href="#https://w3id.org/np/o/ntemplate/hasTag" title="https://w3id.org/np/o/ntemplate/hasTag">has tag</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/np/o/ntemplate/statementOrder" title="https://w3id.org/np/o/ntemplate/statementOrder">statement order</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -1129,6 +1133,9 @@ This section provides details for each class and property defined by Nanopublica
          <a href="#https://w3id.org/np/o/ntemplate/hasRegex" title="https://w3id.org/np/o/ntemplate/hasRegex">has regular expression</a>
       </li>
       <li>
+         <a href="#https://w3id.org/np/o/ntemplate/hasTag" title="https://w3id.org/np/o/ntemplate/hasTag">has tag</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/np/o/ntemplate/possibleValuesFromApi"
             title="https://w3id.org/np/o/ntemplate/possibleValuesFromApi">possible values from API</a>
       </li>
@@ -1209,6 +1216,32 @@ This section provides details for each class and property defined by Nanopublica
             <dt>has domain</dt>
             <dd>
                <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/hasTag">
+      <h3>has tag<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/hasTag</p>
+      <div class="comment">
+         <span class="markdown">Specifies a tag string that is used to group the templates in a user interface.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/hasTag">https://w3id.org/np/o/ntemplate/latest/hasTag</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/np/o/ntemplate/NanopubTemplate" title="https://w3id.org/np/o/ntemplate/NanopubTemplate">Nanopublication Template</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
