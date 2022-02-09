@@ -251,6 +251,18 @@
     
 
 
+    <!-- https://w3id.org/np/o/ntemplate/hasTag -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/np/o/ntemplate/hasTag">
+        <rdfs:domain rdf:resource="https://w3id.org/np/o/ntemplate/NanopubTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/hasTag"/>
+        <rdfs:label xml:lang="en">has tag</rdfs:label>
+        <skos:definition xml:lang="en">Specifies a tag string that is used to group the templates in a user interface.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/np/o/ntemplate/possibleValuesFromApi -->
 
 

@@ -486,6 +486,23 @@
     "@value" : "Connects an assertion template or a statement group within an assertion template to its included statements."
   } ]
 }, {
+  "@id" : "https://w3id.org/np/o/ntemplate/hasTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/NanopubTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/hasTag"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has tag"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Specifies a tag string that is used to group the templates in a user interface."
+  } ]
+}, {
   "@id" : "https://w3id.org/np/o/ntemplate/possibleValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {

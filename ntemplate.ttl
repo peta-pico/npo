@@ -168,6 +168,12 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/np/o/ntemplate/PubinfoTemplate>;
   <http://www.w3.org/2004/02/skos/core#definition> "Indicates the template of a required publication info element for a given assertion template."@en .
 
+<https://w3id.org/np/o/ntemplate/hasTag> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/NanopubTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasTag>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has tag"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "Specifies a tag string that is used to group the templates in a user interface."@en .
+
 <https://w3id.org/np/o/ntemplate/statementOrder> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/NanopubTemplate>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/statementOrder>;
