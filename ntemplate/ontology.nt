@@ -211,7 +211,8 @@
 # 
 # https://w3id.org/np/o/ntemplate/LiteralPlaceholder
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder> .
+<https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/ValuePlaceholder> .
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder> .
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "Literal Placeholder"@en .
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."@en .
@@ -221,6 +222,13 @@
 <https://w3id.org/np/o/ntemplate/LocalResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/LocalResource> .
 <https://w3id.org/np/o/ntemplate/LocalResource> <http://www.w3.org/2000/01/rdf-schema#label> "Local Resource"@en .
 <https://w3id.org/np/o/ntemplate/LocalResource> <http://www.w3.org/2004/02/skos/core#definition> "A resource in a template that represents a local identifier to be minted."@en .
+# 
+# https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> .
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder> .
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "Long Literal Placeholder"@en .
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient."@en .
 # 
 # https://w3id.org/np/o/ntemplate/NanopubTemplate
 <https://w3id.org/np/o/ntemplate/NanopubTemplate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -288,10 +296,16 @@
 <https://w3id.org/np/o/ntemplate/UnlistedTemplate> <http://www.w3.org/2004/02/skos/core#definition> "A nanopublication template that is intended not to show up in template listings (but only to be used when explicitly referenced)."@en .
 # 
 # https://w3id.org/np/o/ntemplate/UriPlaceholder
-<https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder> .
+<https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/ValuePlaceholder> .
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder> .
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "URI Placeholder"@en .
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en .
+# 
+# https://w3id.org/np/o/ntemplate/ValuePlaceholder
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder> .
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder> .
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "Value Placeholder"@en .
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF value (of a possibly restricted set of values), including URIs and literals."@en .
 # 
 # 
 # 

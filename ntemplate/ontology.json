@@ -141,7 +141,7 @@
     "@value" : "Literal Placeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/Placeholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/ValuePlaceholder"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -160,6 +160,23 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A resource in a template that represents a local identifier to be minted."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Long Literal Placeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/NANOPUB",
@@ -371,11 +388,28 @@
     "@value" : "URI Placeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/Placeholder"
+    "@id" : "https://w3id.org/np/o/ntemplate/ValuePlaceholder"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A placeholder that stands for any URI (of a possibly restricted set of URIs)."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/ValuePlaceholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Value Placeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/Placeholder"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A placeholder that stands for any RDF value (of a possibly restricted set of values), including URIs and literals."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/hasDefaultProvenance",

@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Wed Feb 09 16:57:29 CET 2022", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Thu Feb 10 11:04:57 CET 2022", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -109,6 +109,10 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/np/o/ntemplate/LocalResource" title="https://w3id.org/np/o/ntemplate/LocalResource">Local Resource</a>
    </li>
    <li>
+      <a href="#https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder"
+         title="https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder">Long Literal Placeholder</a>
+   </li>
+   <li>
       <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
    </li>
    <li>
@@ -155,6 +159,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/np/o/ntemplate/ValuePlaceholder" title="https://w3id.org/np/o/ntemplate/ValuePlaceholder">Value Placeholder</a>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
@@ -256,6 +263,10 @@ This section provides details for each class and property defined by Nanopublica
          <a href="#https://w3id.org/np/o/ntemplate/LocalResource" title="https://w3id.org/np/o/ntemplate/LocalResource">Local Resource</a>
       </li>
       <li>
+         <a href="#https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder"
+            title="https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder">Long Literal Placeholder</a>
+      </li>
+      <li>
          <a href="#http://www.nanopub.org/nschema#Nanopublication" title="http://www.nanopub.org/nschema#Nanopublication">Nanopublication</a>
       </li>
       <li>
@@ -302,6 +313,9 @@ This section provides details for each class and property defined by Nanopublica
       </li>
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/np/o/ntemplate/ValuePlaceholder" title="https://w3id.org/np/o/ntemplate/ValuePlaceholder">Value Placeholder</a>
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/AssertionTemplate">
@@ -440,7 +454,13 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+            <a href="#https://w3id.org/np/o/ntemplate/ValuePlaceholder" title="https://w3id.org/np/o/ntemplate/ValuePlaceholder">Value Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder"
+               title="https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder">Long Literal Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -466,6 +486,31 @@ This section provides details for each class and property defined by Nanopublica
          <dd>
             <a href="#https://w3id.org/np/o/ntemplate/IntroducedResource"
                title="https://w3id.org/np/o/ntemplate/IntroducedResource">Introduced Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder">
+      <h3>Long Literal Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder">https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
+               title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -575,9 +620,7 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
-               title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
+            <a href="#https://w3id.org/np/o/ntemplate/ValuePlaceholder" title="https://w3id.org/np/o/ntemplate/ValuePlaceholder">Value Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -818,7 +861,7 @@ This section provides details for each class and property defined by Nanopublica
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+            <a href="#https://w3id.org/np/o/ntemplate/ValuePlaceholder" title="https://w3id.org/np/o/ntemplate/ValuePlaceholder">Value Placeholder</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -839,6 +882,37 @@ This section provides details for each class and property defined by Nanopublica
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/np/o/ntemplate/possibleValuesFrom"
                title="https://w3id.org/np/o/ntemplate/possibleValuesFrom">possible values from</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/np/o/ntemplate/ValuePlaceholder">
+      <h3>Value Placeholder<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/ValuePlaceholder</p>
+      <div class="comment">
+         <span class="markdown">A placeholder that stands for any RDF value (of a possibly restricted set of values), including URIs and literals.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder">https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/Placeholder" title="https://w3id.org/np/o/ntemplate/Placeholder">Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
+               title="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">Literal Placeholder</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/np/o/ntemplate/UriPlaceholder" title="https://w3id.org/np/o/ntemplate/UriPlaceholder">URI Placeholder</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>

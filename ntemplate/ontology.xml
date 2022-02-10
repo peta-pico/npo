@@ -369,7 +369,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/Placeholder"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/ValuePlaceholder"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder"/>
         <rdfs:label xml:lang="en">Literal Placeholder</rdfs:label>
         <skos:definition xml:lang="en">A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals).</skos:definition>
@@ -384,6 +384,18 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/LocalResource"/>
         <rdfs:label xml:lang="en">Local Resource</rdfs:label>
         <skos:definition xml:lang="en">A resource in a template that represents a local identifier to be minted.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/LiteralPlaceholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder"/>
+        <rdfs:label xml:lang="en">Long Literal Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient.</skos:definition>
     </owl:Class>
     
 
@@ -509,10 +521,22 @@
 
 
     <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/UriPlaceholder">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/Placeholder"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/ValuePlaceholder"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/UriPlaceholder"/>
         <rdfs:label xml:lang="en">URI Placeholder</rdfs:label>
         <skos:definition xml:lang="en">A placeholder that stands for any URI (of a possibly restricted set of URIs).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/ValuePlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/ValuePlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/Placeholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder"/>
+        <rdfs:label xml:lang="en">Value Placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for any RDF value (of a possibly restricted set of values), including URIs and literals.</skos:definition>
     </owl:Class>
     
 

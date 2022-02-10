@@ -225,7 +225,7 @@ rdf:Statement rdf:type owl:Class ;
 
 ###  https://w3id.org/np/o/ntemplate/LiteralPlaceholder
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <https://w3id.org/np/o/ntemplate/Placeholder> ;
+                                                     rdfs:subClassOf <https://w3id.org/np/o/ntemplate/ValuePlaceholder> ;
                                                      rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder> ;
                                                      rdfs:label "Literal Placeholder"@en ;
                                                      <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."@en .
@@ -236,6 +236,14 @@ rdf:Statement rdf:type owl:Class ;
                                                 rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/LocalResource> ;
                                                 rdfs:label "Local Resource"@en ;
                                                 <http://www.w3.org/2004/02/skos/core#definition> "A resource in a template that represents a local identifier to be minted."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> ;
+                                                         rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder> ;
+                                                         rdfs:label "Long Literal Placeholder"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient."@en .
 
 
 ###  https://w3id.org/np/o/ntemplate/NanopubTemplate
@@ -317,10 +325,18 @@ rdf:Statement rdf:type owl:Class ;
 
 ###  https://w3id.org/np/o/ntemplate/UriPlaceholder
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <https://w3id.org/np/o/ntemplate/Placeholder> ;
+                                                 rdfs:subClassOf <https://w3id.org/np/o/ntemplate/ValuePlaceholder> ;
                                                  rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder> ;
                                                  rdfs:label "URI Placeholder"@en ;
                                                  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/ValuePlaceholder
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://w3id.org/np/o/ntemplate/Placeholder> ;
+                                                   rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder> ;
+                                                   rdfs:label "Value Placeholder"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF value (of a possibly restricted set of values), including URIs and literals."@en .
 
 
 #################################################################
