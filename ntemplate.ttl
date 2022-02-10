@@ -86,10 +86,16 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#label> "Placeholder"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "A placeholder corresponding to an input component like a text field in a template."@en .
 
+<https://w3id.org/np/o/ntemplate/ValuePlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/ValuePlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Value Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF value (of a possibly restricted set of values), including URIs and literals."@en .
+
 <https://w3id.org/np/o/ntemplate/UriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
     <https://w3id.org/np/o/ntemplate/latest/UriPlaceholder>;
   <http://www.w3.org/2000/01/rdf-schema#label> "URI Placeholder"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/ValuePlaceholder>;
   <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI (of a possibly restricted set of URIs)."@en .
 
 <https://w3id.org/np/o/ntemplate/TrustyUriPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
@@ -113,8 +119,14 @@ np:Nanopublication rdfs:label "Nanopublication" .
 <https://w3id.org/np/o/ntemplate/LiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
     <https://w3id.org/np/o/ntemplate/latest/LiteralPlaceholder>;
   <http://www.w3.org/2000/01/rdf-schema#label> "Literal Placeholder"@en;
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/Placeholder>;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/ValuePlaceholder>;
   <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any RDF literal (of a possibly restricted set of possible literals)."@en .
+
+<https://w3id.org/np/o/ntemplate/LongLiteralPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/LongLiteralPlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Long Literal Placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/LiteralPlaceholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient."@en .
 
 <https://w3id.org/np/o/ntemplate/LocalResource> a <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/LocalResource>;
