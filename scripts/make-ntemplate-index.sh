@@ -31,6 +31,13 @@ scripts/np mkindex \
   -t "Nanopublications representing the Nanopublication Template Ontology" \
   -l https://creativecommons.org/publicdomain/zero/1.0/ \
   $LASTINDEXARG \
-  -o ntemplate.index.trig \
+  -p \
+  -o ntemplate.index.pre.trig \
   ntemplate.trig
 
+
+scripts/np sign \
+  -o ntemplate.index.trig \
+  ntemplate.index.pre.trig
+
+rm ntemplate.index.pre.trig

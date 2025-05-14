@@ -13,7 +13,7 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 SCRIPTDIR=`pwd`
 cd $WORKINGDIR
 
-WIDOCOJAR=$(find $SCRIPTDIR -maxdepth 1 -name "widoco-*-jar-with-dependencies.jar" 2>/dev/null | sort -n | tail -1)
+WIDOCOJAR=$(find $SCRIPTDIR -maxdepth 1 -name "*widoco-*-jar-with-dependencies.jar" 2>/dev/null | sort -n | tail -1)
 
 if [ -z "$WIDOCOJAR" ]; then
   echo "ERROR: Failed to find Widoco jar file. Run get-widoco.sh first."
@@ -78,3 +78,16 @@ if [ -f doc/$1/sections/references-en.html ]; then
   mv doc/$1/index-en.mod.html doc/$1/index-en.html
 fi
 
+if [ -f doc-x/$1-namemap.csv ]; then
+  while IFS=',' read -ra LINE; do
+    sed -ir 's_\([^\"]\)'"${LINE[0]}"'_\1 '"${LINE[1]}"'_' doc/$1/index-en.html
+  done < doc-x/$1-namemap.csv
+fi
+
+if [ -x doc-x/$1-postprocess.sh ]; then
+  doc-x/$1-postprocess.sh
+fi
+
+cp $1.trig doc/$1/ontology.trig
+
+rm -f doc/$1/index-en.htmlr
