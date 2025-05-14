@@ -20,6 +20,7 @@ if [ -z $LASTRELEASE ]; then
   scripts/np sign -o $1.trig $1.trig.pre
 else
   echo "Previous release: $LASTRELEASE"
+  # Add `-f '-h AlwaysDifferentFingerprints'` to the next line to force new nanopub creation:
   scripts/np op reuse -s -t '-h UriBaseTopics' -x releases/$1.$LASTRELEASE.trig -a $1.temp.trig $1.trig.pre
   scripts/np sign -i -o $1.trig $1.temp.trig
   rm $1.temp.trig
