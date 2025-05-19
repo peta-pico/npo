@@ -328,7 +328,7 @@ rdf:Statement rdf:type owl:Class ;
 <https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> rdf:type owl:Class ;
                                                              rdfs:subClassOf <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
                                                              rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder> ;
-                                                             rdfs:label "sequence element placeholder"@en ;
+                                                             rdfs:label "Sequence Element Placeholder"@en ;
                                                              <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."@en .
 
 

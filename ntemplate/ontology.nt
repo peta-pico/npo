@@ -300,7 +300,7 @@
 <https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
 <https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder> .
-<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "sequence element placeholder"@en .
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "Sequence Element Placeholder"@en .
 <https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."@en .
 # 
 # https://w3id.org/np/o/ntemplate/TemplateStatement

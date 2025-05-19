@@ -765,8 +765,8 @@ sub:pubinfo {
     npx:hasSignature "ALO8u1ZF84HSSw63pSHrHGKm2Ta7Lri2D55jWAJTJbb9lKPu6p4IpQzkNcMx8ULwwEnXfCzZusbRAeZpWOxlqrOHqVOfPPLaDioxxZ3pY8I384I4vJuDV+N9pG/Wlknny57HG8+fY2+xp6N4ro/m4TFfCXhPs/H26NaPc2YQ4Yg=";
     npx:hasSignatureTarget this: .
 }
-@prefix this: <https://w3id.org/np/o/ntemplate/np/SequenceElementPlaceholder/RA-n5m4ruZp_d1e2R3mHa0uRc1buhvVQoPyRSor3UUsuM> .
-@prefix sub: <https://w3id.org/np/o/ntemplate/np/SequenceElementPlaceholder/RA-n5m4ruZp_d1e2R3mHa0uRc1buhvVQoPyRSor3UUsuM/> .
+@prefix this: <https://w3id.org/np/o/ntemplate/np/SequenceElementPlaceholder/RAg9eHAIUvkqN6nVQBRe6QNEgdT5xtRChhMDA8aUMAbmQ> .
+@prefix sub: <https://w3id.org/np/o/ntemplate/np/SequenceElementPlaceholder/RAg9eHAIUvkqN6nVQBRe6QNEgdT5xtRChhMDA8aUMAbmQ/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix nt: <https://w3id.org/np/o/ntemplate/> .
@@ -786,7 +786,7 @@ sub:Head {
 
 sub:assertion {
   nt:SequenceElementPlaceholder rdfs:isDefinedBy latest:;
-    rdfs:label "sequence element placeholder"@en;
+    rdfs:label "Sequence Element Placeholder"@en;
     rdfs:subClassOf nt:UriPlaceholder;
     skos:definition "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."@en .
 }
@@ -796,14 +796,15 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2025-05-19T11:28:38.111+02:00"^^xsd:dateTime;
+  this: dct:created "2025-05-19T11:32:54.851+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    npx:introduces nt:SequenceElementPlaceholder .
+    npx:introduces nt:SequenceElementPlaceholder;
+    npx:supersedes <https://w3id.org/np/o/ntemplate/np/SequenceElementPlaceholder/RA-n5m4ruZp_d1e2R3mHa0uRc1buhvVQoPyRSor3UUsuM> .
   
   sub:sig npx:hasAlgorithm "RSA";
     npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwUtewGCpT5vIfXYE1bmf/Uqu1ojqnWdYxv+ySO80ul8Gu7m8KoyPAwuvaPj0lvPtHrg000qMmkxzKhYknEjq8v7EerxZNYp5B3/3+5ZpuWOYAs78UnQVjbHSmDdmryr4D4VvvNIiUmd0yxci47dTFUj4DvfHnGd6hVe5+goqdcwIDAQAB";
-    npx:hasSignature "a1/NnP0vnIUYM3BJd5E3e+8mhjX+mJfrQMVXlP+boWoqUTwvrCZVc2I3vx83+fzwvwD022jJGrueTxbrxJvBEOoR33VITt8WBkmUECxsSOkY/KLb74c+lPB71O5gueziTSXqlJjCfDz07tbHQh4dmnMEeYzH022EYVucKFJ19s0=";
+    npx:hasSignature "gCjXD/+xYLLQCWgI8fMBIUxc219O9+CFsV74qEwkcnK+dZd2I38bAUfwFMsphUFJtnCTkf+tkrflhH6O60Mr0+W06v9PP35xY2yiIX5uQ34Qhgi3jo4QWzizgZWTDo7+TYv5BlacZuKtPAxQ0XlPVp5wXeHtK9ax2auPAhtLJMM=";
     npx:hasSignatureTarget this: .
 }
 @prefix this: <https://w3id.org/np/o/ntemplate/np/LocalResource/RAI7fIv74ph0gv_-uaQopKXE2eBQj2L89c8HMhwqdJTAU> .

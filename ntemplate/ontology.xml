@@ -524,7 +524,7 @@
     <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder">
         <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/UriPlaceholder"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder"/>
-        <rdfs:label xml:lang="en">sequence element placeholder</rdfs:label>
+        <rdfs:label xml:lang="en">Sequence Element Placeholder</rdfs:label>
         <skos:definition xml:lang="en">A placeholder that stands for the RDF sequence element predicate &apos;http://www.w3.org/1999/02/22-rdf-syntax-ns#_1&apos;, &apos;...#_2&apos;, etc. and thereby allows for the definition of lists when used in a repeatable statement.</skos:definition>
     </owl:Class>
     
