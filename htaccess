@@ -32,7 +32,7 @@ RewriteRule ^ntemplate/latest/RestrictedChoicePlaceholder$ http://purl.org/np/RA
 RewriteRule ^ntemplate/latest/GuidedChoicePlaceholder$ http://purl.org/np/RAvhjz4wWY2aYes-DfOep_RJgdQ4O-Dp1KgfmBLh-olbs [R=302,L]
 RewriteRule ^ntemplate/latest/LiteralPlaceholder$ http://purl.org/np/RAv_VP8gTT9pZoIlYghn2tz9PFPc3qj8tZL2Fpzphvbtw [R=302,L]
 RewriteRule ^ntemplate/latest/LongLiteralPlaceholder$ http://purl.org/np/RA4ay_qJ6rSJMAYZu5zmsXg__z9NX0Ljruf20Y9VRLTjg [R=302,L]
-RewriteRule ^ntemplate/latest/SequenceElementPlaceholder$ http://purl.org/np/RA-n5m4ruZp_d1e2R3mHa0uRc1buhvVQoPyRSor3UUsuM [R=302,L]
+RewriteRule ^ntemplate/latest/SequenceElementPlaceholder$ http://purl.org/np/RAg9eHAIUvkqN6nVQBRe6QNEgdT5xtRChhMDA8aUMAbmQ [R=302,L]
 RewriteRule ^ntemplate/latest/LocalResource$ http://purl.org/np/RAI7fIv74ph0gv_-uaQopKXE2eBQj2L89c8HMhwqdJTAU [R=302,L]
 RewriteRule ^ntemplate/latest/IntroducedResource$ http://purl.org/np/RAehIjMGnVN8OspjyLhwZBa4Wa18E1m0O8ZtEKXXdBRWc [R=302,L]
 RewriteRule ^ntemplate/latest/hasStatement$ http://purl.org/np/RARFtG6Nqwfnen87eXs8Z1VUkCgJLgvr7uSCmcAMJM27A [R=302,L]
@@ -56,4 +56,4 @@ RewriteRule ^ntemplate/latest/CREATOR$ http://purl.org/np/RAuPfJpjLI5qBqKdqU6fuv
 RewriteRule ^ntemplate/latest/ASSERTION$ http://purl.org/np/RAglXPLRGN5RwkbcGhh36licyQNre3cIVykBngp-rZdM4 [R=302,L]
 RewriteRule ^ntemplate/latest/NANOPUB$ http://purl.org/np/RAiS98ruJhU6oRY8rIUJspq14s4fsS7KzEvPGZ8SSdjig [R=302,L]
 
-RewriteRule ^ntemplate/latest/index$ http://purl.org/np/RAgsb55WHAettWg5-ucbskGNqi-TE4b609w5UFIWU5RUQ [R=302,L]
+RewriteRule ^ntemplate/latest/index$ http://purl.org/np/RAQUcGTSxW2N-d0O0Zd8sl1xHWNx5-H0tcZAeKkZVZC7I [R=302,L]
