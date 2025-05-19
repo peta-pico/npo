@@ -139,6 +139,30 @@
     
 
 
+    <!-- https://w3id.org/np/o/ntemplate/hasTargetNamespace -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/hasTargetNamespace">
+        <rdfs:domain rdf:resource="https://w3id.org/np/o/ntemplate/AssertionTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/hasTargetNamespace"/>
+        <rdfs:label xml:lang="en">has target namespace</rdfs:label>
+        <skos:definition xml:lang="en">Refers to the namespace (URI prefix) in which the nanopublication should be created.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/hasTargetNanopubType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/np/o/ntemplate/hasTargetNanopubType">
+        <rdfs:domain rdf:resource="https://w3id.org/np/o/ntemplate/AssertionTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/hasTargetNanopubType"/>
+        <rdfs:label xml:lang="en">has target nanopub type</rdfs:label>
+        <skos:definition xml:lang="en">Refers to type (any URI) which will be assigned as Nanopub Type to all nanopublication created from the given template.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/np/o/ntemplate/possibleValue -->
 
 
@@ -212,6 +236,18 @@
      -->
 
 
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern">
+        <rdfs:domain rdf:resource="https://w3id.org/np/o/ntemplate/AssertionTemplate"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/hasNanopubLabelPattern"/>
+        <rdfs:label xml:lang="en">has nanopub label pattern</rdfs:label>
+        <skos:definition xml:lang="en">Assigns a label pattern that defines how the final nanopublication will be labeled, e.g. &apos;Thing: ${thing}&apos; where &apos;${thing}&apos; is a placeholder for the content of placeholder &apos;thing&apos;.</skos:definition>
+    </owl:DatatypeProperty>
     
 
 
@@ -478,6 +514,18 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder"/>
         <rdfs:label xml:lang="en">Restricted-Choice Placeholder</rdfs:label>
         <skos:definition xml:lang="en">A placeholder that stands for any URI of a pre-defined set of possible values.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/UriPlaceholder"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder"/>
+        <rdfs:label xml:lang="en">sequence element placeholder</rdfs:label>
+        <skos:definition xml:lang="en">A placeholder that stands for the RDF sequence element predicate &apos;http://www.w3.org/1999/02/22-rdf-syntax-ns#_1&apos;, &apos;...#_2&apos;, etc. and thereby allows for the definition of lists when used in a repeatable statement.</skos:definition>
     </owl:Class>
     
 

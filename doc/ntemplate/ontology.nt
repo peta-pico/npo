@@ -74,6 +74,20 @@
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2000/01/rdf-schema#label> "has statement"@en .
 <https://w3id.org/np/o/ntemplate/hasStatement> <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
 # 
+# https://w3id.org/np/o/ntemplate/hasTargetNamespace
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate> .
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasTargetNamespace> .
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> <http://www.w3.org/2000/01/rdf-schema#label> "has target namespace"@en .
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> <http://www.w3.org/2004/02/skos/core#definition> "Refers to the namespace (URI prefix) in which the nanopublication should be created."@en .
+# 
+# https://w3id.org/np/o/ntemplate/hasTargetNanopubType
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate> .
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasTargetNanopubType> .
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> <http://www.w3.org/2000/01/rdf-schema#label> "has target nanopub type"@en .
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> <http://www.w3.org/2004/02/skos/core#definition> "Refers to type (any URI) which will be assigned as Nanopub Type to all nanopublication created from the given template."@en .
+# 
 # https://w3id.org/np/o/ntemplate/possibleValue
 <https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/np/o/ntemplate/possibleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
@@ -123,6 +137,13 @@
 # #
 # #################################################################
 # 
+# 
+# https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate> .
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasNanopubLabelPattern> .
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> <http://www.w3.org/2000/01/rdf-schema#label> "has nanopub label pattern"@en .
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> <http://www.w3.org/2004/02/skos/core#definition> "Assigns a label pattern that defines how the final nanopublication will be labeled, e.g. 'Thing: ${thing}' where '${thing}' is a placeholder for the content of placeholder 'thing'."@en .
 # 
 # https://w3id.org/np/o/ntemplate/hasPrefix
 <https://w3id.org/np/o/ntemplate/hasPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -274,6 +295,13 @@
 <https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder> .
 <https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "Restricted-Choice Placeholder"@en .
 <https://w3id.org/np/o/ntemplate/RestrictedChoicePlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI of a pre-defined set of possible values."@en .
+# 
+# https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/UriPlaceholder> .
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder> .
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#label> "sequence element placeholder"@en .
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."@en .
 # 
 # https://w3id.org/np/o/ntemplate/TemplateStatement
 <https://w3id.org/np/o/ntemplate/TemplateStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

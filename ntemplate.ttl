@@ -128,6 +128,12 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/LiteralPlaceholder>;
   <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for an RDF literal that is expected to have a long value such that a bigger text field is convenient."@en .
 
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+    <https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "sequence element placeholder"@en;
+  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/np/o/ntemplate/UriPlaceholder>;
+  <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."@en .
+
 <https://w3id.org/np/o/ntemplate/LocalResource> a <http://www.w3.org/2002/07/owl#Class>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/LocalResource>;
   <http://www.w3.org/2000/01/rdf-schema#label> "Local Resource"@en;
@@ -205,6 +211,18 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#range> <http://www.nanopub.org/nschema#Nanopublication>;
   <http://www.w3.org/2004/02/skos/core#definition> "Points to a nanopublication with possible values for a given restricted-choice or guided-choice placeholder."@en .
 
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasTargetNamespace>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has target namespace"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "Refers to the namespace (URI prefix) in which the nanopublication should be created."@en .
+
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasTargetNanopubType>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has target nanopub type"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "Refers to type (any URI) which will be assigned as Nanopub Type to all nanopublication created from the given template."@en .
+
 <https://w3id.org/np/o/ntemplate/possibleValuesFromApi> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/possibleValuesFromApi>;
@@ -228,6 +246,12 @@ np:Nanopublication rdfs:label "Nanopublication" .
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasRegex>;
   <http://www.w3.org/2000/01/rdf-schema#label> "has regular expression"@en;
   <http://www.w3.org/2004/02/skos/core#definition> "Specifies a regular expression pattern restricting the possible values for the given placeholder."@en .
+
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/np/o/ntemplate/AssertionTemplate>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/hasNanopubLabelPattern>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has nanopub label pattern"@en;
+  <http://www.w3.org/2004/02/skos/core#definition> "Assigns a label pattern that defines how the final nanopublication will be labeled, e.g. 'Thing: ${thing}' where '${thing}' is a placeholder for the content of placeholder 'thing'."@en .
 
 <https://w3id.org/np/o/ntemplate/CREATOR> a <http://www.w3.org/2002/07/owl#NamedIndividual>;
   <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/np/o/ntemplate/latest/CREATOR>;
