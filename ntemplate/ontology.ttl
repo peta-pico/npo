@@ -81,6 +81,22 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
                                                <http://www.w3.org/2004/02/skos/core#definition> "Connects an assertion template or a statement group within an assertion template to its included statements."@en .
 
 
+###  https://w3id.org/np/o/ntemplate/hasTargetNamespace
+<https://w3id.org/np/o/ntemplate/hasTargetNamespace> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                                                     rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasTargetNamespace> ;
+                                                     rdfs:label "has target namespace"@en ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> "Refers to the namespace (URI prefix) in which the nanopublication should be created."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/hasTargetNanopubType
+<https://w3id.org/np/o/ntemplate/hasTargetNanopubType> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                                                       rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasTargetNanopubType> ;
+                                                       rdfs:label "has target nanopub type"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#definition> "Refers to type (any URI) which will be assigned as Nanopub Type to all nanopublication created from the given template."@en .
+
+
 ###  https://w3id.org/np/o/ntemplate/possibleValue
 <https://w3id.org/np/o/ntemplate/possibleValue> rdf:type owl:ObjectProperty ;
                                                 rdfs:domain <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
@@ -128,6 +144,14 @@ rdfs:seeAlso rdf:type owl:ObjectProperty .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern
+<https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                                                         rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/hasNanopubLabelPattern> ;
+                                                         rdfs:label "has nanopub label pattern"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "Assigns a label pattern that defines how the final nanopublication will be labeled, e.g. 'Thing: ${thing}' where '${thing}' is a placeholder for the content of placeholder 'thing'."@en .
+
 
 ###  https://w3id.org/np/o/ntemplate/hasPrefix
 <https://w3id.org/np/o/ntemplate/hasPrefix> rdf:type owl:DatatypeProperty ;
@@ -298,6 +322,14 @@ rdf:Statement rdf:type owl:Class ;
                                                               rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/RestrictedChoicePlaceholder> ;
                                                               rdfs:label "Restricted-Choice Placeholder"@en ;
                                                               <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for any URI of a pre-defined set of possible values."@en .
+
+
+###  https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder
+<https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <https://w3id.org/np/o/ntemplate/UriPlaceholder> ;
+                                                             rdfs:isDefinedBy <https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder> ;
+                                                             rdfs:label "sequence element placeholder"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."@en .
 
 
 ###  https://w3id.org/np/o/ntemplate/TemplateStatement

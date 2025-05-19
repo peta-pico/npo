@@ -330,6 +330,23 @@
     "@value" : "A placeholder that stands for any URI of a pre-defined set of possible values."
   } ]
 }, {
+  "@id" : "https://w3id.org/np/o/ntemplate/SequenceElementPlaceholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/SequenceElementPlaceholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sequence element placeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/UriPlaceholder"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A placeholder that stands for the RDF sequence element predicate 'http://www.w3.org/1999/02/22-rdf-syntax-ns#_1', '...#_2', etc. and thereby allows for the definition of lists when used in a repeatable statement."
+  } ]
+}, {
   "@id" : "https://w3id.org/np/o/ntemplate/TemplateStatement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -430,6 +447,23 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Indicates the default provenance template for a given assertion template."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/hasNanopubLabelPattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/hasNanopubLabelPattern"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has nanopub label pattern"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Assigns a label pattern that defines how the final nanopublication will be labeled, e.g. 'Thing: ${thing}' where '${thing}' is a placeholder for the content of placeholder 'thing'."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/hasPrefix",
@@ -535,6 +569,40 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Specifies a tag string that is used to group the templates in a user interface."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/hasTargetNamespace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/hasTargetNamespace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has target namespace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the namespace (URI prefix) in which the nanopublication should be created."
+  } ]
+}, {
+  "@id" : "https://w3id.org/np/o/ntemplate/hasTargetNanopubType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/AssertionTemplate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/hasTargetNanopubType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has target nanopub type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Refers to type (any URI) which will be assigned as Nanopub Type to all nanopublication created from the given template."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/possibleValue",
