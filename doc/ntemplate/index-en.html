@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Mon May 19 11:32:58 CEST 2025", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/np/o/ntemplate/NanopubTemplateOntology","name":"Nanopublication Template Ontology", "headline":"This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.", "datePublished":"Fri May 23 11:47:42 CEST 2025", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -57,11 +57,11 @@ function loadTOC(){
 
 <dl>
 <dt>Authors:</dt>
-<dd><a href="https://orcid.org/0000-0002-1267-0234">https://orcid.org/0000-0002-1267-0234</a></dd>
+<dd><a href="https://orcid.org/0000-0002-1267-0234"> Tobias Kuhn</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
 </dd><dt>Cite as:</dt>
-<dd>https://orcid.org/0000-0002-1267-0234. Nanopublication Template Ontology.</dd>
+<dd> Tobias Kuhn. Nanopublication Template Ontology.</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -77,7 +77,7 @@ This is an ontology to describe nanopublication templates, which can be publishe
 
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-This documentation is generated from the nanopublications that you can find <a href="https://github.com/peta-pico/npo">here</a>.
+This documentation is generated from the nanopublications via <a href="https://github.com/peta-pico/npo">this repository</a>.
 
 
 <!--OVERVIEW SECTION-->
@@ -96,10 +96,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
          title="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">Guided-Choice Placeholder</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/np/o/ntemplate/IntroducedResource"
-         title="https://w3id.org/np/o/ntemplate/IntroducedResource">Introduced Resource</a>
    </li>
    <li>
       <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
@@ -249,6 +245,72 @@ This ontology has the following classes and properties.</span>
 
 <p>This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.</p>
 
+<p>By current convention (maybe to be revisited at some point), the assertion of a nanopublication that introduces a template also serves as the identifier for the template itself:</p>
+
+<pre>
+sub:assertion a nt:AssertionTemplate .
+</pre>
+
+<p>Minimally, a template should have a label and description, and point to at least one statement:</p>
+
+<pre>
+sub:assertion a nt:AssertionTemplate;
+  rdfs:label "Minimal template";
+  dct:description "This is a minimal template.";
+  nt:hasStatement sub:st1 .
+</pre>
+
+<p>Statements are then defined like this:</p>
+
+<pre>
+sub:st1 rdf:object sub:label;
+  rdf:predicate rdfs:label;
+  rdf:subject &lt;https://example.org/&gt; .
+</pre>
+
+<p>Internally minted IDs like <code>sub:label</code> can be declared as placeholders:</p>
+
+<pre>
+sub:label a nt:LiteralPlaceholder.
+</pre>
+
+<p>We can declare labels to be shown to the users for the different elements like this:</p>
+
+<pre>
+sub:label rdfs:label "write label text here" .
+rdfs:label rdfs:label "has the label" .
+</pre>
+
+This gives us this complete (and almost minimal) template as a nanopublication assertion:
+
+<pre>
+sub:assertion {
+  sub:assertion a nt:AssertionTemplate;
+    rdfs:label "Minimal template";
+    dct:description "This is a minimal template.";
+    nt:hasStatement sub:st1 .
+
+  sub:st1 rdf:object sub:label;
+    rdf:predicate rdfs:label;
+    rdf:subject &lt;https://example.org/&gt; .
+
+  sub:label a nt:LiteralPlaceholder;
+    rdfs:label "write label text here" .
+
+  rdfs:label rdfs:label "has the label" .
+}
+</pre>
+
+<p>You can find the full nanopublicaton <a href="https://w3id.org/np/RAjmZ94VadSmMMmpaD6rmIyIwF0-kMuG8_vlif_EydUpc">here</a> and try out the template <a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RAjmZ94VadSmMMmpaD6rmIyIwF0-kMuG8_vlif_EydUpc">here</a>.</p>
+
+<p>The ontology term definitions below give you the information for more complex types of templates. The easiest way to generate such templates is in Nanodash itself, through these forms that are created by templates describing template definitions:</p>
+
+<ul>
+<li><a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RA5reLVXOCPQFWr2UiCJb19ES7NwOpQRmudb17e2iB0c4&template-version=latest">Assertion template</a></li>
+<li><a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RA4G-jlJDG3s1FYMQOLEVbqMMNLYBSSy1YNyPs4G0lH68&template-version=latest">Provenance template</a></li>
+<li><a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RAyHFpLzPjkspX5zCC3mU8gow33Ah4tCH06xsveR_iaG0&template-version=latest">Publication info template</a></li>
+</ul>
+
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Nanopublication Template Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -266,10 +328,6 @@ This section provides details for each class and property defined by Nanopublica
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder"
             title="https://w3id.org/np/o/ntemplate/GuidedChoicePlaceholder">Guided-Choice Placeholder</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/np/o/ntemplate/IntroducedResource"
-            title="https://w3id.org/np/o/ntemplate/IntroducedResource">Introduced Resource</a>
       </li>
       <li>
          <a href="#https://w3id.org/np/o/ntemplate/LiteralPlaceholder"
@@ -437,30 +495,6 @@ This section provides details for each class and property defined by Nanopublica
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/np/o/ntemplate/IntroducedResource">
-      <h3>Introduced Resource<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/np/o/ntemplate/IntroducedResource</p>
-      <div class="comment">
-         <span class="markdown">A resource in a template that represents a thing that is introduced (i.e. is referenced with 'npx:introduces' in the publication info of the nanopublications created from the template).</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="https://w3id.org/np/o/ntemplate/latest/IntroducedResource">https://w3id.org/np/o/ntemplate/latest/IntroducedResource</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/LocalResource" title="https://w3id.org/np/o/ntemplate/LocalResource">Local Resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="https://w3id.org/np/o/ntemplate/LiteralPlaceholder">
       <h3>Literal Placeholder<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -505,14 +539,6 @@ This section provides details for each class and property defined by Nanopublica
          <dt>Is defined by</dt>
          <dd>
             <a href="https://w3id.org/np/o/ntemplate/latest/LocalResource">https://w3id.org/np/o/ntemplate/latest/LocalResource</a>
-         </dd>
-      </dl>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#https://w3id.org/np/o/ntemplate/IntroducedResource"
-               title="https://w3id.org/np/o/ntemplate/IntroducedResource">Introduced Resource</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
