@@ -22,8 +22,8 @@ sub:assertion a nt:AssertionTemplate;
 
 <pre>
 sub:st1 rdf:object sub:label;
- rdf:predicate rdfs:label;
- rdf:subject <https://example.org/> .
+  rdf:predicate rdfs:label;
+  rdf:subject &lt;https://example.org/&gt; .
 </pre>
 
 <p>Internally minted IDs like <code>sub:label</code> can be declared as placeholders:</p>
@@ -43,19 +43,19 @@ This gives us this complete (and almost minimal) template as a nanopublication a
 
 <pre>
 sub:assertion {
-  rdfs:label rdfs:label "has the label" .
-  
-  sub:assertion dct:description "This is a minimal template.";
-    a nt:AssertionTemplate;
+  sub:assertion a nt:AssertionTemplate;
     rdfs:label "Minimal template";
+    dct:description "This is a minimal template.";
     nt:hasStatement sub:st1 .
-  
-  sub:label a nt:LiteralPlaceholder;
-    rdfs:label "write label text here" .
-  
+
   sub:st1 rdf:object sub:label;
     rdf:predicate rdfs:label;
-    rdf:subject <https://example.org/> .
+    rdf:subject &lt;https://example.org/&gt; .
+
+  sub:label a nt:LiteralPlaceholder;
+    rdfs:label "write label text here" .
+
+  rdfs:label rdfs:label "has the label" .
 }
 </pre>
 
