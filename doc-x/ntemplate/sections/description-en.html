@@ -3,4 +3,70 @@
 
 <p>This is an ontology to describe nanopublication templates, which can be published as nanopublications themselves.</p>
 
+<p>By current convention (maybe to be revisited at some point), the assertion of a nanopublication that introduces a template also serves as the identifier for the template itself:</p>
+
+<pre>
+sub:assertion a nt:AssertionTemplate .
+</pre>
+
+<p>Minimally, a template should have a label and description, and point to at least one statement:</p>
+
+<pre>
+sub:assertion a nt:AssertionTemplate;
+  rdfs:label "Minimal template";
+  dct:description "This is a minimal template.";
+  nt:hasStatement sub:st1 .
+</pre>
+
+<p>Statements are then defined like this:</p>
+
+<pre>
+sub:st1 rdf:object sub:label;
+ rdf:predicate rdfs:label;
+ rdf:subject <https://example.org/> .
+</pre>
+
+<p>Internally minted IDs like <code>sub:label</code> can be declared as placeholders:</p>
+
+<pre>
+sub:label a nt:LiteralPlaceholder.
+</pre>
+
+<p>We can declare labels to be shown to the users for the different elements like this:</p>
+
+<pre>
+sub:label rdfs:label "write label text here" .
+rdfs:label rdfs:label "has the label" .
+</pre>
+
+This gives us this complete (and almost minimal) template as a nanopublication assertion:
+
+<pre>
+sub:assertion {
+  rdfs:label rdfs:label "has the label" .
+  
+  sub:assertion dct:description "This is a minimal template.";
+    a nt:AssertionTemplate;
+    rdfs:label "Minimal template";
+    nt:hasStatement sub:st1 .
+  
+  sub:label a nt:LiteralPlaceholder;
+    rdfs:label "write label text here" .
+  
+  sub:st1 rdf:object sub:label;
+    rdf:predicate rdfs:label;
+    rdf:subject <https://example.org/> .
+}
+</pre>
+
+<p>You can find the full nanopublicaton <a href="https://w3id.org/np/RAjmZ94VadSmMMmpaD6rmIyIwF0-kMuG8_vlif_EydUpc">here</a> and try out the template <a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RAjmZ94VadSmMMmpaD6rmIyIwF0-kMuG8_vlif_EydUpc">here</a>.</p>
+
+<p>The ontology term definitions below give you the information for more complex types of templates. The easiest way to generate such templates is in Nanodash itself, through these forms that are created by templates describing template definitions:</p>
+
+<ul>
+<li><a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RA5reLVXOCPQFWr2UiCJb19ES7NwOpQRmudb17e2iB0c4&template-version=latest">Assertion template</a></li>
+<li><a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RA4G-jlJDG3s1FYMQOLEVbqMMNLYBSSy1YNyPs4G0lH68&template-version=latest">Provenance template</a></li>
+<li><a href="https://nanodash.knowledgepixels.com/publish?template=https://w3id.org/np/RAyHFpLzPjkspX5zCC3mU8gow33Ah4tCH06xsveR_iaG0&template-version=latest">Publication info template</a></li>
+</ul>
+
 </html>
