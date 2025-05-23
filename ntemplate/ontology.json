@@ -80,6 +80,19 @@
     "@value" : "This is a template reference to the creator of the nanopublication."
   } ]
 }, {
+  "@id" : "https://w3id.org/np/o/ntemplate/EmbeddedResource",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/np/o/ntemplate/latest/EmbeddedResource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Embedded Resource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A resource in a template that represents a thing that is embedded (i.e. is referenced with 'npx:embeds' in the publication info of the nanopublications created from the template). In contrast to introduced resources, embedded resources are specific to the given nanopublication and a new embedded resource ID is minted upon superseding of the nanopublication."
+  } ]
+}, {
   "@id" : "https://w3id.org/np/o/ntemplate/GroupedStatement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -115,7 +128,6 @@
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/IntroducedResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/np/o/ntemplate/latest/IntroducedResource"
   } ],
@@ -123,12 +135,9 @@
     "@language" : "en",
     "@value" : "Introduced Resource"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/np/o/ntemplate/LocalResource"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A resource in a template that represents a thing that is introduced (i.e. is referenced with 'npx:introduces' in the publication info of the nanopublications created from the template)."
+    "@value" : "A resource in a template that represents a thing that is introduced (i.e. is referenced with 'npx:introduces' in the publication info of the nanopublications created from the template). In contract to embedded resources, introduced resources retain the same ID in superseding nanopublications."
   } ]
 }, {
   "@id" : "https://w3id.org/np/o/ntemplate/LiteralPlaceholder",

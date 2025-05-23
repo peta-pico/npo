@@ -389,18 +389,6 @@
     
 
 
-    <!-- https://w3id.org/np/o/ntemplate/IntroducedResource -->
-
-
-    <owl:Class rdf:about="https://w3id.org/np/o/ntemplate/IntroducedResource">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/np/o/ntemplate/LocalResource"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/IntroducedResource"/>
-        <rdfs:label xml:lang="en">Introduced Resource</rdfs:label>
-        <skos:definition xml:lang="en">A resource in a template that represents a thing that is introduced (i.e. is referenced with &apos;npx:introduces&apos; in the publication info of the nanopublications created from the template).</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/np/o/ntemplate/LiteralPlaceholder -->
 
 
@@ -631,6 +619,28 @@
         <rdfs:label xml:lang="en">NANOPUB</rdfs:label>
         <skos:definition xml:lang="en">This is a template reference to the nanopublication to be created.</skos:definition>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/np/o/ntemplate/EmbeddedResource">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/EmbeddedResource"/>
+        <rdfs:label xml:lang="en">Embedded Resource</rdfs:label>
+        <skos:definition xml:lang="en">A resource in a template that represents a thing that is embedded (i.e. is referenced with &apos;npx:embeds&apos; in the publication info of the nanopublications created from the template). In contrast to introduced resources, embedded resources are specific to the given nanopublication and a new embedded resource ID is minted upon superseding of the nanopublication.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/np/o/ntemplate/IntroducedResource">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/np/o/ntemplate/latest/IntroducedResource"/>
+        <rdfs:label xml:lang="en">Introduced Resource</rdfs:label>
+        <skos:definition xml:lang="en">A resource in a template that represents a thing that is introduced (i.e. is referenced with &apos;npx:introduces&apos; in the publication info of the nanopublications created from the template). In contract to embedded resources, introduced resources retain the same ID in superseding nanopublications.</skos:definition>
+    </rdf:Description>
 </rdf:RDF>
 
 
